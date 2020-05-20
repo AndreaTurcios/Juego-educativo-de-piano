@@ -111,6 +111,11 @@ public class frmJuegoMain extends javax.swing.JFrame {
                 btnC1ActionPerformed(evt);
             }
         });
+        btnC1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btnC1KeyPressed(evt);
+            }
+        });
 
         btnDSost1.setBackground(new java.awt.Color(102, 102, 102));
         btnDSost1.addActionListener(new java.awt.event.ActionListener() {
@@ -218,6 +223,14 @@ public class frmJuegoMain extends javax.swing.JFrame {
 
     private void btnG1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG1ActionPerformed
         System.out.println("G1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\G.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error G1" + e);
+        }
     }//GEN-LAST:event_btnG1ActionPerformed
 
     private void btnC1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnC1MouseClicked
@@ -302,23 +315,75 @@ public class frmJuegoMain extends javax.swing.JFrame {
 
     private void btnGSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGSost1ActionPerformed
         System.out.println("G#1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\G_s.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error G#1" + e);
+        }
     }//GEN-LAST:event_btnGSost1ActionPerformed
 
     private void btnA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA1ActionPerformed
         System.out.println("A1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\A.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error A1" + e);
+        }
     }//GEN-LAST:event_btnA1ActionPerformed
 
     private void btnASost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnASost1ActionPerformed
         System.out.println("A#1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\Bb.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error A#1" + e);
+        }
     }//GEN-LAST:event_btnASost1ActionPerformed
 
     private void btnB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB1ActionPerformed
         System.out.println("B1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\B.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error B1" + e);
+        }
     }//GEN-LAST:event_btnB1ActionPerformed
 
     private void btnC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC2ActionPerformed
         System.out.println("C2");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\C.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error C2" + e);
+        }
     }//GEN-LAST:event_btnC2ActionPerformed
+
+    private void btnC1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnC1KeyPressed
+        System.out.println("C1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\C1.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error C1" + e);
+        }
+    }//GEN-LAST:event_btnC1KeyPressed
 
     /**
      * @param args the command line arguments
