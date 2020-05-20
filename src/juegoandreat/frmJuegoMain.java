@@ -1,4 +1,7 @@
 package juegoandreat;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import sun.audio.*;
 public class frmJuegoMain extends javax.swing.JFrame {
     public frmJuegoMain() {
         initComponents();
@@ -11,19 +14,19 @@ public class frmJuegoMain extends javax.swing.JFrame {
         jButton11 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jButton9 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
+        btnCSost1 = new javax.swing.JButton();
+        btnC2 = new javax.swing.JButton();
+        btnB1 = new javax.swing.JButton();
+        btnA1 = new javax.swing.JButton();
+        btnG1 = new javax.swing.JButton();
+        btnF1 = new javax.swing.JButton();
+        btnE1 = new javax.swing.JButton();
+        btnD1 = new javax.swing.JButton();
+        btnC1 = new javax.swing.JButton();
+        btnDSost1 = new javax.swing.JButton();
+        btnFSost1 = new javax.swing.JButton();
+        btnGSost1 = new javax.swing.JButton();
+        btnASost1 = new javax.swing.JButton();
 
         jButton11.setText("jButton9");
 
@@ -35,42 +38,107 @@ public class frmJuegoMain extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
-        jButton9.setBackground(new java.awt.Color(102, 102, 102));
-
-        jButton8.setBackground(new java.awt.Color(255, 255, 255));
-
-        jButton7.setBackground(new java.awt.Color(255, 255, 255));
-
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
-
-        jButton5.setBackground(new java.awt.Color(255, 255, 255));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnCSost1.setBackground(new java.awt.Color(102, 102, 102));
+        btnCSost1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCSost1MouseClicked(evt);
+            }
+        });
+        btnCSost1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnCSost1ActionPerformed(evt);
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(255, 255, 255));
-
-        jButton3.setBackground(new java.awt.Color(255, 255, 255));
-
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
-
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnC2.setBackground(new java.awt.Color(255, 255, 255));
+        btnC2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnC2ActionPerformed(evt);
             }
         });
 
-        jButton10.setBackground(new java.awt.Color(102, 102, 102));
+        btnB1.setBackground(new java.awt.Color(255, 255, 255));
+        btnB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnB1ActionPerformed(evt);
+            }
+        });
 
-        jButton12.setBackground(new java.awt.Color(102, 102, 102));
+        btnA1.setBackground(new java.awt.Color(255, 255, 255));
+        btnA1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnA1ActionPerformed(evt);
+            }
+        });
 
-        jButton14.setBackground(new java.awt.Color(102, 102, 102));
+        btnG1.setBackground(new java.awt.Color(255, 255, 255));
+        btnG1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnG1ActionPerformed(evt);
+            }
+        });
 
-        jButton15.setBackground(new java.awt.Color(102, 102, 102));
+        btnF1.setBackground(new java.awt.Color(255, 255, 255));
+        btnF1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnF1ActionPerformed(evt);
+            }
+        });
+
+        btnE1.setBackground(new java.awt.Color(255, 255, 255));
+        btnE1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnE1ActionPerformed(evt);
+            }
+        });
+
+        btnD1.setBackground(new java.awt.Color(255, 255, 255));
+        btnD1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnD1ActionPerformed(evt);
+            }
+        });
+
+        btnC1.setBackground(new java.awt.Color(255, 255, 255));
+        btnC1.setForeground(new java.awt.Color(255, 255, 255));
+        btnC1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnC1MouseClicked(evt);
+            }
+        });
+        btnC1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnC1ActionPerformed(evt);
+            }
+        });
+
+        btnDSost1.setBackground(new java.awt.Color(102, 102, 102));
+        btnDSost1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDSost1ActionPerformed(evt);
+            }
+        });
+
+        btnFSost1.setBackground(new java.awt.Color(102, 102, 102));
+        btnFSost1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFSost1ActionPerformed(evt);
+            }
+        });
+
+        btnGSost1.setBackground(new java.awt.Color(102, 102, 102));
+        btnGSost1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGSost1ActionPerformed(evt);
+            }
+        });
+
+        btnASost1.setBackground(new java.awt.Color(102, 102, 102));
+        btnASost1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnASost1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -78,33 +146,33 @@ public class frmJuegoMain extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(49, 49, 49)
-                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnCSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(57, 57, 57)
-                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnDSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(116, 116, 116)
-                .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnFSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42)
-                .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnGSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42)
-                .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnASost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnC1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnD1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnE1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
-                .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
+                .addComponent(btnF1, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnG1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnA1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnB1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnC2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40))
         );
         jPanel1Layout.setVerticalGroup(
@@ -112,21 +180,21 @@ public class frmJuegoMain extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
-                    .addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
-                    .addComponent(jButton14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
-                    .addComponent(jButton15, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnDSost1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
+                    .addComponent(btnFSost1, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
+                    .addComponent(btnGSost1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
+                    .addComponent(btnASost1, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
+                    .addComponent(btnCSost1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnF1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnE1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnD1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnG1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnC1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnA1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnB1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnC2, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(43, 43, 43))
         );
 
@@ -135,13 +203,122 @@ public class frmJuegoMain extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btnC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC1ActionPerformed
+       System.out.println("C1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\C1.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error C1" + e);
+        }
+                                             
+    }//GEN-LAST:event_btnC1ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnG1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG1ActionPerformed
+        System.out.println("G1");
+    }//GEN-LAST:event_btnG1ActionPerformed
+
+    private void btnC1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnC1MouseClicked
+        
+    }//GEN-LAST:event_btnC1MouseClicked
+
+    private void btnCSost1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCSost1MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnCSost1MouseClicked
+
+    private void btnCSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCSost1ActionPerformed
+        System.out.println("C#1");
+        try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\C_s1.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error C#1" + e);
+        }
+    }//GEN-LAST:event_btnCSost1ActionPerformed
+
+    private void btnD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD1ActionPerformed
+        System.out.println("D1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\D1.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error D1" + e);
+        }
+    }//GEN-LAST:event_btnD1ActionPerformed
+
+    private void btnDSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDSost1ActionPerformed
+        System.out.println("D#1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\D_s1.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error D#1" + e);
+        }
+    }//GEN-LAST:event_btnDSost1ActionPerformed
+
+    private void btnE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE1ActionPerformed
+        System.out.println("E1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\E1.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error E1" + e);
+        }
+    }//GEN-LAST:event_btnE1ActionPerformed
+
+    private void btnF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF1ActionPerformed
+        System.out.println("F1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\F1.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error F1" + e);
+        }
+    }//GEN-LAST:event_btnF1ActionPerformed
+
+    private void btnFSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFSost1ActionPerformed
+        System.out.println("F#1");
+       try {
+            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\F_s.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Error F#1" + e);
+        }
+    }//GEN-LAST:event_btnFSost1ActionPerformed
+
+    private void btnGSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGSost1ActionPerformed
+        System.out.println("G#1");
+    }//GEN-LAST:event_btnGSost1ActionPerformed
+
+    private void btnA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA1ActionPerformed
+        System.out.println("A1");
+    }//GEN-LAST:event_btnA1ActionPerformed
+
+    private void btnASost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnASost1ActionPerformed
+        System.out.println("A#1");
+    }//GEN-LAST:event_btnASost1ActionPerformed
+
+    private void btnB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB1ActionPerformed
+        System.out.println("B1");
+    }//GEN-LAST:event_btnB1ActionPerformed
+
+    private void btnC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC2ActionPerformed
+        System.out.println("C2");
+    }//GEN-LAST:event_btnC2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -179,21 +356,21 @@ public class frmJuegoMain extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
+    private javax.swing.JButton btnA1;
+    private javax.swing.JButton btnASost1;
+    private javax.swing.JButton btnB1;
+    private javax.swing.JButton btnC1;
+    private javax.swing.JButton btnC2;
+    private javax.swing.JButton btnCSost1;
+    private javax.swing.JButton btnD1;
+    private javax.swing.JButton btnDSost1;
+    private javax.swing.JButton btnE1;
+    private javax.swing.JButton btnF1;
+    private javax.swing.JButton btnFSost1;
+    private javax.swing.JButton btnG1;
+    private javax.swing.JButton btnGSost1;
     private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
