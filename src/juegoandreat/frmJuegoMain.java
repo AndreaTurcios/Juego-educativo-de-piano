@@ -211,7 +211,8 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC1ActionPerformed
        System.out.println("C1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\C1.wav";
+            //String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\C1.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/C1.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -224,7 +225,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnG1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG1ActionPerformed
         System.out.println("G1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\G.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/G.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -244,7 +245,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnCSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCSost1ActionPerformed
         System.out.println("C#1");
         try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\C_s1.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/C_s1.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -256,7 +257,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD1ActionPerformed
         System.out.println("D1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\D1.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/D1.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -268,7 +269,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnDSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDSost1ActionPerformed
         System.out.println("D#1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\D_s1.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/D_s1.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -280,7 +281,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE1ActionPerformed
         System.out.println("E1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\E1.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/E1.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -292,7 +293,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnF1ActionPerformed
         System.out.println("F1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\F1.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/F1.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -304,7 +305,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnFSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFSost1ActionPerformed
         System.out.println("F#1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\F_s.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/F_s.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -316,7 +317,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnGSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGSost1ActionPerformed
         System.out.println("G#1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\G_s.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/G_s.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -328,7 +329,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA1ActionPerformed
         System.out.println("A1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\A.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/A.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -340,7 +341,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnASost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnASost1ActionPerformed
         System.out.println("A#1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\Bb.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/Bb.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -352,7 +353,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB1ActionPerformed
         System.out.println("B1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\B.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/B.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -364,7 +365,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC2ActionPerformed
         System.out.println("C2");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\C.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/C.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -376,7 +377,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnC1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnC1KeyPressed
         System.out.println("C1");
        try {
-            String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\C1.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/C1.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
