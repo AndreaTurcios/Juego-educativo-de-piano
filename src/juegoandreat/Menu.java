@@ -69,7 +69,7 @@ public class Menu extends javax.swing.JFrame {
                 btnCerrarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 0, 100, 30));
+        getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 10, 100, 30));
 
         BtnPiano.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         BtnPiano.setIcon(new javax.swing.ImageIcon(getClass().getResource("/juegoandreat/pianoicono.png"))); // NOI18N
