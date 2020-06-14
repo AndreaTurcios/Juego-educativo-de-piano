@@ -150,6 +150,8 @@ public class frmTeoria extends javax.swing.JFrame {
         } catch (Exception e) {
             System.err.println("Audio" + e);
         }
+       btnReproducir.setEnabled(false);
+        
     }//GEN-LAST:event_btnReproducirActionPerformed
 
     /**
