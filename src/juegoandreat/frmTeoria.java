@@ -44,6 +44,7 @@ public class frmTeoria extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Pentagrama", jTabbedPane2);
 
+        btnReproducir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/juegoandreat/play.png"))); // NOI18N
         btnReproducir.setText("Reproducir");
         btnReproducir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
