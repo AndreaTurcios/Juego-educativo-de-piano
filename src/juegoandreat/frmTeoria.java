@@ -1,9 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package juegoandreat;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+import sun.audio.AudioPlayer;
+import sun.audio.AudioStream;
 
 /**
  *
@@ -34,7 +35,7 @@ public class frmTeoria extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btnReproducir = new javax.swing.JButton();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jTabbedPane4 = new javax.swing.JTabbedPane();
         jTabbedPane5 = new javax.swing.JTabbedPane();
@@ -49,22 +50,27 @@ public class frmTeoria extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Pentagrama", jTabbedPane2);
 
-        jButton1.setText("Reproducir");
+        btnReproducir.setText("Reproducir");
+        btnReproducir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReproducirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jButton1)
-                .addContainerGap(573, Short.MAX_VALUE))
+                .addGap(26, 26, 26)
+                .addComponent(btnReproducir)
+                .addContainerGap(571, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnReproducir, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(270, Short.MAX_VALUE))
         );
 
@@ -134,6 +140,19 @@ public class frmTeoria extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnReproducirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducirActionPerformed
+        System.out.println("Audio");
+       try {
+            //String file = "src/juegoandreat/Notas/AUDIOS/EstefanyAudioFiguras.mp3";
+            String file = "src/juegoandreat/Notas/AUDIOS/EstefanyAudioFiguras.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Audio" + e);
+        }
+    }//GEN-LAST:event_btnReproducirActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -170,7 +189,7 @@ public class frmTeoria extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnReproducir;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

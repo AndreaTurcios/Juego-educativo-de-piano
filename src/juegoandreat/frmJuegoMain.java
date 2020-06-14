@@ -223,14 +223,14 @@ public class frmJuegoMain extends javax.swing.JFrame {
     }//GEN-LAST:event_btnC1ActionPerformed
 
     private void btnG1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnG1ActionPerformed
-        System.out.println("G1");
+        System.out.println("Audio teoria");
        try {
-            String file = "src/juegoandreat/Notas/Music_Note/G.wav";
+            String file = "src/juegoandreat/Notas/AUDIOS/WhatsApp Audio 2020-06-13 at 8.28.51 PM (1) (online-audio-converter.com).wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
         } catch (Exception e) {
-            System.err.println("Error G1" + e);
+            System.err.println("Error audio" + e);
         }
     }//GEN-LAST:event_btnG1ActionPerformed
 
