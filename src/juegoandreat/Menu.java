@@ -92,12 +92,14 @@ public class Menu extends javax.swing.JFrame {
         frmTeoria llamar = new frmTeoria();
         llamar.setVisible(true);
         llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dispose();
     }//GEN-LAST:event_btnTeoriaActionPerformed
 
     private void BtnPianoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPianoActionPerformed
         frmJuegoMain llamar = new frmJuegoMain();
         llamar.setVisible(true);
         llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dispose();
     }//GEN-LAST:event_BtnPianoActionPerformed
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
