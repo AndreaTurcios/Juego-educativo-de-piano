@@ -71,7 +71,7 @@
           <Font name="Ubuntu" size="18" style="0"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/juegoandreat/iconfinder-musicmelodysoundaudio17-4105564_113840.png"/>
+          <Image iconType="3" name="/Imagenes/iconfinder-musicmelodysoundaudio17-4105564_113840.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Teor&#xed;a"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -108,7 +108,7 @@
           <Font name="Ubuntu" size="18" style="0"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/juegoandreat/pianoicono.png"/>
+          <Image iconType="3" name="/Imagenes/pianoicono.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Pr&#xe1;ctica"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -129,7 +129,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/juegoandreat/gif.gif"/>
+          <Image iconType="3" name="/Imagenes/gif.gif"/>
         </Property>
       </Properties>
       <Constraints>

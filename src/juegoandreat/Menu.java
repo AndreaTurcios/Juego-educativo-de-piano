@@ -53,7 +53,7 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         btnTeoria.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
-        btnTeoria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/juegoandreat/iconfinder-musicmelodysoundaudio17-4105564_113840.png"))); // NOI18N
+        btnTeoria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconfinder-musicmelodysoundaudio17-4105564_113840.png"))); // NOI18N
         btnTeoria.setText("Teoría");
         btnTeoria.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnTeoria.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +72,7 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 10, 100, 30));
 
         BtnPiano.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
-        BtnPiano.setIcon(new javax.swing.ImageIcon(getClass().getResource("/juegoandreat/pianoicono.png"))); // NOI18N
+        BtnPiano.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pianoicono.png"))); // NOI18N
         BtnPiano.setText("Práctica");
         BtnPiano.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnPiano.addActionListener(new java.awt.event.ActionListener() {
@@ -82,7 +82,7 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(BtnPiano, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 240, 190, 50));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/juegoandreat/gif.gif"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/gif.gif"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
