@@ -34,6 +34,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
         btnASost1 = new javax.swing.JButton();
         btnRegresar = new javax.swing.JButton();
         jCheckBox1 = new javax.swing.JCheckBox();
+        jbtncancion = new javax.swing.JButton();
 
         jButton11.setText("jButton9");
 
@@ -329,6 +330,13 @@ public class frmJuegoMain extends javax.swing.JFrame {
 
         jCheckBox1.setText("Sostenido");
 
+        jbtncancion.setText("jButton1");
+        jbtncancion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtncancionActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -366,7 +374,9 @@ public class frmJuegoMain extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnRegresar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jCheckBox1)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jbtncancion)
+                            .addComponent(jCheckBox1))
                         .addGap(48, 48, 48))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -377,6 +387,8 @@ public class frmJuegoMain extends javax.swing.JFrame {
                         .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jCheckBox1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtncancion)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(25, 25, 25)
@@ -410,7 +422,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
         if (jCheckBox1.isSelected ()) {
               try {
             //String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\C1.wav";
-            String file = "src/juegoandreat/Notas/Music_Note/C_s.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/Do sostenido.mp3";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -467,7 +479,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnCSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCSost1ActionPerformed
         System.out.println("C#1");
         try {
-            String file = "src/juegoandreat/Notas/Music_Note/C_s.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/Do-sostenido.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -505,7 +517,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
         System.out.println("D#1");
        
        try {
-            String file = "src/juegoandreat/Notas/Music_Note/D_s.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/Re-sostenido.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -567,7 +579,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnFSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFSost1ActionPerformed
         System.out.println("F#1");
        try {
-            String file = "src/juegoandreat/Notas/Music_Note/F_s.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/Fa-sostenido.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -579,7 +591,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnGSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGSost1ActionPerformed
         System.out.println("G#1");
        try {
-            String file = "src/juegoandreat/Notas/Music_Note/G_s.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/Solsostenido.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -616,7 +628,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private void btnASost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnASost1ActionPerformed
         System.out.println("A#1");
        try {
-            String file = "src/juegoandreat/Notas/Music_Note/Bb.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/La-sostenido.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -869,6 +881,10 @@ public class frmJuegoMain extends javax.swing.JFrame {
         btnASost1.setBackground(Color.white);
     }//GEN-LAST:event_btnASost1MouseExited
 
+    private void jbtncancionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtncancionActionPerformed
+        
+    }//GEN-LAST:event_jbtncancionActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -923,6 +939,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private javax.swing.JButton jButton13;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton jbtncancion;
     // End of variables declaration//GEN-END:variables
 
     private void btnD1AceptarActionPerformed(Object object) {
