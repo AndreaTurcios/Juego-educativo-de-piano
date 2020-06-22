@@ -397,7 +397,7 @@ public class frmTeoria extends javax.swing.JFrame {
                 btnComenzarActionPerformed(evt);
             }
         });
-        jPanel7.add(btnComenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 190, 20));
+        jPanel7.add(btnComenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 190, 20));
 
         pnlResolver.setBackground(new java.awt.Color(204, 204, 204));
 
