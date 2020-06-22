@@ -62,7 +62,7 @@ public class Menu extends javax.swing.JFrame {
                 btnTeoriaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnTeoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 190, 50));
+        getContentPane().add(btnTeoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 190, 50));
 
         btnCerrar.setText("Cerrar");
         btnCerrar.addActionListener(new java.awt.event.ActionListener() {
@@ -81,7 +81,7 @@ public class Menu extends javax.swing.JFrame {
                 BtnPianoActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnPiano, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 190, 50));
+        getContentPane().add(BtnPiano, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 190, 50));
 
         btnTeoria1.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         btnTeoria1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/business_man_usersearch_thesearch_theclient_2356.png"))); // NOI18N
@@ -92,7 +92,7 @@ public class Menu extends javax.swing.JFrame {
                 btnTeoria1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnTeoria1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 370, 190, 50));
+        getContentPane().add(btnTeoria1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 190, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/gif.gif"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
