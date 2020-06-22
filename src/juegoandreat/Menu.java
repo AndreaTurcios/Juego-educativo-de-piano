@@ -35,7 +35,7 @@ public class Menu extends javax.swing.JFrame {
         btnTeoria = new javax.swing.JButton();
         btnCerrar = new javax.swing.JButton();
         BtnPiano = new javax.swing.JButton();
-        btnTeoria1 = new javax.swing.JButton();
+        btnAutores = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -83,16 +83,16 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(BtnPiano, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 190, 50));
 
-        btnTeoria1.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
-        btnTeoria1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/business_man_usersearch_thesearch_theclient_2356.png"))); // NOI18N
-        btnTeoria1.setText("Autores");
-        btnTeoria1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnTeoria1.addActionListener(new java.awt.event.ActionListener() {
+        btnAutores.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
+        btnAutores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/business_man_usersearch_thesearch_theclient_2356.png"))); // NOI18N
+        btnAutores.setText("Autores");
+        btnAutores.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAutores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTeoria1ActionPerformed(evt);
+                btnAutoresActionPerformed(evt);
             }
         });
-        getContentPane().add(btnTeoria1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 190, 50));
+        getContentPane().add(btnAutores, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 190, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/gif.gif"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -118,9 +118,12 @@ public class Menu extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_btnCerrarActionPerformed
 
-    private void btnTeoria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTeoria1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnTeoria1ActionPerformed
+    private void btnAutoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAutoresActionPerformed
+       frmAutores llamar = new frmAutores();
+        llamar.setVisible(true);
+        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dispose();
+    }//GEN-LAST:event_btnAutoresActionPerformed
 
     /**
      * @param args the command line arguments
@@ -159,9 +162,9 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnPiano;
+    private javax.swing.JButton btnAutores;
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnTeoria;
-    private javax.swing.JButton btnTeoria1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

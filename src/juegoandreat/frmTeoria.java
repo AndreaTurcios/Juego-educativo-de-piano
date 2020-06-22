@@ -1,12 +1,17 @@
 package juegoandreat;
+import java.awt.event.ActionListener;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import javax.swing.JFrame;
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
+import javax.swing.*;
+import javax.swing.Timer;
 
 public class frmTeoria extends javax.swing.JFrame {
-
+private Timer t;
+    private ActionListener ac;
+    private int x=0;
     public frmTeoria() {
         initComponents();
         this.setLocationRelativeTo(null);
