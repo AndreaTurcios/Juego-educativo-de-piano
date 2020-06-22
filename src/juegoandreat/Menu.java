@@ -35,6 +35,7 @@ public class Menu extends javax.swing.JFrame {
         btnTeoria = new javax.swing.JButton();
         btnCerrar = new javax.swing.JButton();
         BtnPiano = new javax.swing.JButton();
+        btnTeoria1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -80,7 +81,18 @@ public class Menu extends javax.swing.JFrame {
                 BtnPianoActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnPiano, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 240, 190, 50));
+        getContentPane().add(BtnPiano, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 190, 50));
+
+        btnTeoria1.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
+        btnTeoria1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/business_man_usersearch_thesearch_theclient_2356.png"))); // NOI18N
+        btnTeoria1.setText("Autores");
+        btnTeoria1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnTeoria1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTeoria1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnTeoria1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 370, 190, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/gif.gif"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -105,6 +117,10 @@ public class Menu extends javax.swing.JFrame {
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void btnTeoria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTeoria1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTeoria1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -145,6 +161,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton BtnPiano;
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnTeoria;
+    private javax.swing.JButton btnTeoria1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
