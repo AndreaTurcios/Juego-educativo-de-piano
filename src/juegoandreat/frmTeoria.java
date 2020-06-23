@@ -199,9 +199,11 @@ private Timer t;
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel6))
                     .addComponent(btnReproducirP2))
-                .addGap(0, 64, Short.MAX_VALUE))
+                .addGap(0, 54, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
