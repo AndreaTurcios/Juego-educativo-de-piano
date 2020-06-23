@@ -1212,16 +1212,16 @@ private Timer t;
     }//GEN-LAST:event_rbOpc1MouseClicked
 
     private void btnReproducir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducir1ActionPerformed
-           try {
-            String file = "src/juegoandreat/Notas/AUDIOS/Edwin Velocidad.wav";
+        System.out.println("Audio");
+        try {
+            String file = "src/juegoandreat/Notas/AUDIOS/EdwinVelocidad.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
         } catch (Exception e) {
             System.err.println("Audio" + e);
         }
-        btnReproducir1.setEnabled(false);
-   
+        btnReproducir1.setEnabled(false);                  
     }//GEN-LAST:event_btnReproducir1ActionPerformed
     
     private void btnReproducirP1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReproducirP1MousePressed
