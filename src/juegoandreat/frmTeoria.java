@@ -34,6 +34,7 @@ private Timer t;
         Pregunta2 = new javax.swing.ButtonGroup();
         Pregunta3 = new javax.swing.ButtonGroup();
         Pregunta4 = new javax.swing.ButtonGroup();
+        Pregunta5 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -124,6 +125,26 @@ private Timer t;
         lblCorr4 = new javax.swing.JLabel();
         rbOpc14 = new javax.swing.JRadioButton();
         lblInc12 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jPanel17 = new javax.swing.JPanel();
+        rbOpc15 = new javax.swing.JRadioButton();
+        rbOpc16 = new javax.swing.JRadioButton();
+        lblInc13 = new javax.swing.JLabel();
+        lblInc14 = new javax.swing.JLabel();
+        rbOpc17 = new javax.swing.JRadioButton();
+        lblCorr5 = new javax.swing.JLabel();
+        rbOpc18 = new javax.swing.JRadioButton();
+        lblInc15 = new javax.swing.JLabel();
+        jPanel18 = new javax.swing.JPanel();
+        rbOpc19 = new javax.swing.JRadioButton();
+        rbOpc20 = new javax.swing.JRadioButton();
+        lblInc16 = new javax.swing.JLabel();
+        lblInc17 = new javax.swing.JLabel();
+        rbOpc21 = new javax.swing.JRadioButton();
+        lblCorr6 = new javax.swing.JLabel();
+        rbOpc22 = new javax.swing.JRadioButton();
+        lblInc18 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
         btnReproducirExamen = new javax.swing.JButton();
         btnComenzar = new javax.swing.JButton();
         btnRegreso = new javax.swing.JButton();
@@ -648,7 +669,7 @@ private Timer t;
                         .addComponent(lblCorr2))
                     .addGroup(jPanel13Layout.createSequentialGroup()
                         .addComponent(rbOpcC1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 345, Short.MAX_VALUE)
                         .addComponent(lblInc6)))
                 .addContainerGap())
         );
@@ -726,7 +747,7 @@ private Timer t;
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addGap(132, 132, 132)
                         .addComponent(jLabel23)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 131, Short.MAX_VALUE))
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(rbOpc8)
@@ -765,7 +786,7 @@ private Timer t;
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(rbOpc10)
                     .addComponent(lblInc9))
-                .addContainerGap(73, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -789,13 +810,13 @@ private Timer t;
         lblInc11.setText("Incorrecto");
 
         Pregunta4.add(rbOpc13);
-        rbOpc13.setText("La (A)");
+        rbOpc13.setText("La clave de sol y la clave de do");
 
         lblCorr4.setForeground(new java.awt.Color(0, 153, 0));
         lblCorr4.setText("Correcto");
 
         Pregunta4.add(rbOpc14);
-        rbOpc14.setText("Re (D)");
+        rbOpc14.setText("La clave de sol");
 
         lblInc12.setForeground(new java.awt.Color(255, 0, 0));
         lblInc12.setText("Incorrecto");
@@ -809,14 +830,14 @@ private Timer t;
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel16Layout.createSequentialGroup()
                         .addComponent(rbOpc14)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 392, Short.MAX_VALUE)
                         .addComponent(lblInc12))
                     .addGroup(jPanel16Layout.createSequentialGroup()
                         .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(rbOpc13)
                             .addComponent(rbOpc11)
                             .addComponent(rbOpc12))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 314, Short.MAX_VALUE)
                         .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblCorr4, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lblInc10, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -845,6 +866,154 @@ private Timer t;
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel25.setText("¿Cuántas notas existen por escala?");
+
+        jPanel17.setBorder(javax.swing.BorderFactory.createTitledBorder("Pregunta 5"));
+
+        Pregunta5.add(rbOpc15);
+        rbOpc15.setText("8 notas");
+
+        Pregunta5.add(rbOpc16);
+        rbOpc16.setText("7 notas, de ahí la escala sube de nuevo");
+
+        lblInc13.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc13.setText("Incorrecto");
+
+        lblInc14.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc14.setText("Incorrecto");
+
+        Pregunta5.add(rbOpc17);
+        rbOpc17.setText("8 notas, de ahí la escala sube de nuevo");
+
+        lblCorr5.setForeground(new java.awt.Color(0, 153, 0));
+        lblCorr5.setText("Correcto");
+
+        Pregunta5.add(rbOpc18);
+        rbOpc18.setText("6 notas");
+
+        lblInc15.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc15.setText("Incorrecto");
+
+        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
+        jPanel17.setLayout(jPanel17Layout);
+        jPanel17Layout.setHorizontalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addComponent(rbOpc18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblInc15))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
+                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbOpc17)
+                            .addComponent(rbOpc15)
+                            .addComponent(rbOpc16))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblInc14)
+                            .addComponent(lblInc13, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblCorr5, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addGap(10, 10, 10))
+        );
+        jPanel17Layout.setVerticalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc15)
+                    .addComponent(lblInc13))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc16)
+                    .addComponent(lblCorr5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc17)
+                    .addComponent(lblInc14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc18)
+                    .addComponent(lblInc15))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel18.setBorder(javax.swing.BorderFactory.createTitledBorder("Pregunta 6"));
+
+        Pregunta5.add(rbOpc19);
+        rbOpc19.setText("kjkjk");
+
+        Pregunta5.add(rbOpc20);
+        rbOpc20.setText("Aquel que ");
+
+        lblInc16.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc16.setText("Incorrecto");
+
+        lblInc17.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc17.setText("Incorrecto");
+
+        Pregunta5.add(rbOpc21);
+        rbOpc21.setText("8 notas, de ahí la escala sube de nuevo");
+
+        lblCorr6.setForeground(new java.awt.Color(0, 153, 0));
+        lblCorr6.setText("Correcto");
+
+        Pregunta5.add(rbOpc22);
+        rbOpc22.setText("Aquel ritmo que nos hace mover los pies o alguna parte del cuerpo al seguir la melodía ");
+
+        lblInc18.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc18.setText("Incorrecto");
+
+        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
+        jPanel18.setLayout(jPanel18Layout);
+        jPanel18Layout.setHorizontalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addComponent(rbOpc22)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblCorr6))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
+                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbOpc21)
+                            .addComponent(rbOpc19)
+                            .addComponent(rbOpc20))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblInc17)
+                            .addComponent(lblInc16, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblInc18, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addGap(10, 10, 10))
+        );
+        jPanel18Layout.setVerticalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc19)
+                    .addComponent(lblInc16))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc20)
+                    .addComponent(lblInc18))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc21)
+                    .addComponent(lblInc17))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc22)
+                    .addComponent(lblCorr6))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel26.setText("¿Qué es el pulso?");
+
         javax.swing.GroupLayout pnlResolverLayout = new javax.swing.GroupLayout(pnlResolver);
         pnlResolver.setLayout(pnlResolverLayout);
         pnlResolverLayout.setHorizontalGroup(
@@ -856,21 +1025,32 @@ private Timer t;
                         .addComponent(jLabel1)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(pnlResolverLayout.createSequentialGroup()
-                        .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jPanel16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel24)
-                                .addGroup(pnlResolverLayout.createSequentialGroup()
-                                    .addComponent(btnRevision)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(lblNota))
-                                .addComponent(jLabel20)
-                                .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addGap(0, 430, Short.MAX_VALUE))))
+                        .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel26)
+                            .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jPanel18, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel20)
+                                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel24)
+                                    .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(jPanel17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel25)
+                                            .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                .addComponent(jPanel16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addGroup(pnlResolverLayout.createSequentialGroup()
+                                                    .addComponent(btnRevision)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(lblNota)
+                                                    .addGap(436, 436, 436)))))
+                                    .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel19)
+                                        .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(pnlResolverLayout.createSequentialGroup()
+                                        .addGap(6, 6, 6)
+                                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(0, 415, Short.MAX_VALUE))))
         );
         pnlResolverLayout.setVerticalGroup(
             pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -881,17 +1061,25 @@ private Timer t;
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel19)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(9, 9, 9)
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16)
-                .addComponent(jLabel20)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel24)
                 .addGap(18, 18, 18)
+                .addComponent(jLabel20)
+                .addGap(11, 11, 11)
+                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel24)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 318, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel25)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 368, Short.MAX_VALUE)
                 .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNota)
                     .addComponent(btnRevision))
@@ -900,7 +1088,7 @@ private Timer t;
 
         jPanel5.getAccessibleContext().setAccessibleName("");
 
-        jPanel7.add(pnlResolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 670, 1300));
+        jPanel7.add(pnlResolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 620, 1620));
 
         btnReproducirExamen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/juegoandreat/play.png"))); // NOI18N
         btnReproducirExamen.setText("Reproducir");
@@ -1169,6 +1357,14 @@ private Timer t;
            System.out.println("Datos incorrectos");
            vidas--;
           } 
+        //pregunta5
+         if (rbOpc16.isSelected()==true) {
+            System.out.println("Datos correctos");
+            nota++;
+        }else{
+           System.out.println("Datos incorrectos");
+           vidas--;
+          } 
         //vidas
       String vidafinal= String.valueOf(vidas);
       lblVidas.setText(vidafinal);
@@ -1280,6 +1476,7 @@ private Timer t;
     private javax.swing.ButtonGroup Pregunta2;
     private javax.swing.ButtonGroup Pregunta3;
     private javax.swing.ButtonGroup Pregunta4;
+    private javax.swing.ButtonGroup Pregunta5;
     private javax.swing.JButton btnComenzar;
     private javax.swing.JButton btnNivel2;
     private javax.swing.JButton btnRegreso;
@@ -1310,6 +1507,8 @@ private Timer t;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1325,6 +1524,8 @@ private Timer t;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -1345,10 +1546,18 @@ private Timer t;
     private javax.swing.JLabel lblCorr2;
     private javax.swing.JLabel lblCorr3;
     private javax.swing.JLabel lblCorr4;
+    private javax.swing.JLabel lblCorr5;
+    private javax.swing.JLabel lblCorr6;
     private javax.swing.JLabel lblInc1;
     private javax.swing.JLabel lblInc10;
     private javax.swing.JLabel lblInc11;
     private javax.swing.JLabel lblInc12;
+    private javax.swing.JLabel lblInc13;
+    private javax.swing.JLabel lblInc14;
+    private javax.swing.JLabel lblInc15;
+    private javax.swing.JLabel lblInc16;
+    private javax.swing.JLabel lblInc17;
+    private javax.swing.JLabel lblInc18;
     private javax.swing.JLabel lblInc2;
     private javax.swing.JLabel lblInc3;
     private javax.swing.JLabel lblInc4;
@@ -1368,7 +1577,15 @@ private Timer t;
     private javax.swing.JRadioButton rbOpc12;
     private javax.swing.JRadioButton rbOpc13;
     private javax.swing.JRadioButton rbOpc14;
+    private javax.swing.JRadioButton rbOpc15;
+    private javax.swing.JRadioButton rbOpc16;
+    private javax.swing.JRadioButton rbOpc17;
+    private javax.swing.JRadioButton rbOpc18;
+    private javax.swing.JRadioButton rbOpc19;
     private javax.swing.JRadioButton rbOpc2;
+    private javax.swing.JRadioButton rbOpc20;
+    private javax.swing.JRadioButton rbOpc21;
+    private javax.swing.JRadioButton rbOpc22;
     private javax.swing.JRadioButton rbOpc3;
     private javax.swing.JRadioButton rbOpc4;
     private javax.swing.JRadioButton rbOpc5;

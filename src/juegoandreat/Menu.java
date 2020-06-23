@@ -19,7 +19,6 @@ public class Menu extends javax.swing.JFrame {
     public Menu() {
         initComponents();
         this.setLocationRelativeTo(null);
-        rsscalelabel.RSScaleLabel.setScaleLabel(lblNiveles_UC1, "src/Imagenes/Niveles_UC1.jpg");
     }
 
     /**
@@ -37,8 +36,6 @@ public class Menu extends javax.swing.JFrame {
         btnCerrar = new javax.swing.JButton();
         BtnPiano = new javax.swing.JButton();
         btnAutores = new javax.swing.JButton();
-        BtnPiano1 = new javax.swing.JButton();
-        lblNiveles_UC1 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -65,7 +62,7 @@ public class Menu extends javax.swing.JFrame {
                 btnTeoriaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnTeoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 190, 50));
+        getContentPane().add(btnTeoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 190, 50));
 
         btnCerrar.setText("Cerrar");
         btnCerrar.addActionListener(new java.awt.event.ActionListener() {
@@ -84,7 +81,7 @@ public class Menu extends javax.swing.JFrame {
                 BtnPianoActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnPiano, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 190, 50));
+        getContentPane().add(BtnPiano, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 190, 50));
 
         btnAutores.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         btnAutores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/business_man_usersearch_thesearch_theclient_2356.png"))); // NOI18N
@@ -95,25 +92,7 @@ public class Menu extends javax.swing.JFrame {
                 btnAutoresActionPerformed(evt);
             }
         });
-        getContentPane().add(btnAutores, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, 190, 50));
-
-        BtnPiano1.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
-        BtnPiano1.setText("Niveles");
-        BtnPiano1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        BtnPiano1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnPiano1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(BtnPiano1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 230, 130, 50));
-
-        lblNiveles_UC1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
-        lblNiveles_UC1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblNiveles_UC1MouseClicked(evt);
-            }
-        });
-        getContentPane().add(lblNiveles_UC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(257, 232, 60, 50));
+        getContentPane().add(btnAutores, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 190, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/gif.gif"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -145,20 +124,6 @@ public class Menu extends javax.swing.JFrame {
         llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         dispose();
     }//GEN-LAST:event_btnAutoresActionPerformed
-
-    private void BtnPiano1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPiano1ActionPerformed
-        FrmMenu_Niveles_UC2 llamar = new FrmMenu_Niveles_UC2();
-        llamar.setVisible(true);
-        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        dispose();
-    }//GEN-LAST:event_BtnPiano1ActionPerformed
-
-    private void lblNiveles_UC1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblNiveles_UC1MouseClicked
-        FrmMenu_Niveles_UC2 llamar = new FrmMenu_Niveles_UC2();
-        llamar.setVisible(true);
-        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        dispose();
-    }//GEN-LAST:event_lblNiveles_UC1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -197,13 +162,11 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnPiano;
-    private javax.swing.JButton BtnPiano1;
     private javax.swing.JButton btnAutores;
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnTeoria;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel lblNiveles_UC1;
     // End of variables declaration//GEN-END:variables
 }
