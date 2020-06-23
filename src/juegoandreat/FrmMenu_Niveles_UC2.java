@@ -5,6 +5,8 @@
  */
 package juegoandreat;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Nanos
@@ -46,6 +48,11 @@ public class FrmMenu_Niveles_UC2 extends javax.swing.JFrame {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Nivel Intermedio");
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(178, 71, 206), 6));
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel3);
         jLabel3.setBounds(30, 220, 420, 80);
 
@@ -54,6 +61,11 @@ public class FrmMenu_Niveles_UC2 extends javax.swing.JFrame {
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Nivel Dificil");
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(178, 71, 206), 6));
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel4);
         jLabel4.setBounds(30, 340, 420, 80);
 
@@ -62,6 +74,11 @@ public class FrmMenu_Niveles_UC2 extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Instrucciones");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(178, 71, 206), 6));
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel1);
         jLabel1.setBounds(30, 450, 420, 80);
 
@@ -73,6 +90,11 @@ public class FrmMenu_Niveles_UC2 extends javax.swing.JFrame {
         lblCerrar_UC1.setForeground(new java.awt.Color(255, 255, 255));
         lblCerrar_UC1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCerrar_UC1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(178, 71, 206), 6));
+        lblCerrar_UC1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblCerrar_UC1MouseClicked(evt);
+            }
+        });
         jPanel1.add(lblCerrar_UC1);
         lblCerrar_UC1.setBounds(410, 10, 60, 50);
 
@@ -89,6 +111,11 @@ public class FrmMenu_Niveles_UC2 extends javax.swing.JFrame {
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Nivel Facil");
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(178, 71, 206), 6));
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel5);
         jLabel5.setBounds(30, 100, 420, 80);
 
@@ -99,6 +126,41 @@ public class FrmMenu_Niveles_UC2 extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        frmJuegoMain llamar = new frmJuegoMain();
+        llamar.setVisible(true);
+        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dispose();
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        frmJuegoMain llamar = new frmJuegoMain();
+        llamar.setVisible(true);
+        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dispose();
+    }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        frmJuegoMain llamar = new frmJuegoMain();
+        llamar.setVisible(true);
+        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dispose();
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        FrmInstrucciones_UC1 llamar = new FrmInstrucciones_UC1();
+        llamar.setVisible(true);
+        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dispose();
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void lblCerrar_UC1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCerrar_UC1MouseClicked
+        Menu llamar = new Menu();
+        llamar.setVisible(true);
+        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dispose();
+    }//GEN-LAST:event_lblCerrar_UC1MouseClicked
 
     /**
      * @param args the command line arguments

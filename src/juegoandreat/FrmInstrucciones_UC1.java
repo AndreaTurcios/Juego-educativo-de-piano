@@ -5,6 +5,8 @@
  */
 package juegoandreat;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Nanos
@@ -16,7 +18,10 @@ public class FrmInstrucciones_UC1 extends javax.swing.JFrame {
      */
     public FrmInstrucciones_UC1() {
         initComponents();
-        //rsscalelabel.RSScaleLabel.setScaleLabel(lblFondo_Instrucciones_UC1, "src/Imagenes/Fondo_UC2.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(lblFondo_Instrucciones_UC1, "src/Imagenes/Fondo_UC2.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(lblNiveles_UC1, "src/Imagenes/Instrucciones_1.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(lblCerrar_UC1, "src/Imagenes/delete.png");
+        rsscalelabel.RSScaleLabel.setScaleLabel(lblMecanicas_UC1, "src/Imagenes/Instrucciones_2.jpg");
     }
 
     /**
@@ -28,14 +33,19 @@ public class FrmInstrucciones_UC1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jPanel1 = new javax.swing.JPanel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        jTabbedPane2 = new javax.swing.JTabbedPane();
-        jTabbedPane3 = new javax.swing.JTabbedPane();
-        jTabbedPane4 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        lblCerrar_UC1 = new javax.swing.JLabel();
+        tbMecanicas_UC1 = new javax.swing.JTabbedPane();
+        lblNiveles_UC1 = new javax.swing.JLabel();
+        lblMecanicas_UC1 = new javax.swing.JLabel();
         lblFondo_Instrucciones_UC1 = new javax.swing.JLabel();
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -43,32 +53,45 @@ public class FrmInstrucciones_UC1 extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
-        jTabbedPane1.addTab("Niveles", jTabbedPane2);
-        jTabbedPane1.addTab("Controles", jTabbedPane3);
-        jTabbedPane1.addTab("Mecánica", jTabbedPane4);
-
-        jPanel1.add(jTabbedPane1);
-        jTabbedPane1.setBounds(20, 110, 680, 340);
-
         jPanel2.setBackground(new java.awt.Color(124, 216, 229));
+        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true));
         jPanel2.setLayout(null);
 
-        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
-        jPanel2.add(jLabel1);
-        jLabel1.setBounds(610, 10, 60, 50);
+        lblCerrar_UC1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        lblCerrar_UC1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblCerrar_UC1MouseClicked(evt);
+            }
+        });
+        jPanel2.add(lblCerrar_UC1);
+        lblCerrar_UC1.setBounds(610, 10, 60, 50);
 
         jPanel1.add(jPanel2);
         jPanel2.setBounds(20, 20, 680, 70);
 
+        lblNiveles_UC1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tbMecanicas_UC1.addTab("Niveles", lblNiveles_UC1);
+        tbMecanicas_UC1.addTab("Mecánicas", lblMecanicas_UC1);
+
+        jPanel1.add(tbMecanicas_UC1);
+        tbMecanicas_UC1.setBounds(20, 100, 680, 360);
+
         lblFondo_Instrucciones_UC1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 8));
         jPanel1.add(lblFondo_Instrucciones_UC1);
-        lblFondo_Instrucciones_UC1.setBounds(1, -2, 720, 480);
+        lblFondo_Instrucciones_UC1.setBounds(0, 0, 720, 480);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 720, 480);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void lblCerrar_UC1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCerrar_UC1MouseClicked
+        FrmMenu_Niveles_UC2 llamar = new FrmMenu_Niveles_UC2();
+        llamar.setVisible(true);
+        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dispose();
+    }//GEN-LAST:event_lblCerrar_UC1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -106,13 +129,14 @@ public class FrmInstrucciones_UC1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTabbedPane jTabbedPane2;
-    private javax.swing.JTabbedPane jTabbedPane3;
-    private javax.swing.JTabbedPane jTabbedPane4;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel lblCerrar_UC1;
     private javax.swing.JLabel lblFondo_Instrucciones_UC1;
+    private javax.swing.JLabel lblMecanicas_UC1;
+    private javax.swing.JLabel lblNiveles_UC1;
+    private javax.swing.JTabbedPane tbMecanicas_UC1;
     // End of variables declaration//GEN-END:variables
 }
