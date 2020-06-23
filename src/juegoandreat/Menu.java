@@ -19,6 +19,7 @@ public class Menu extends javax.swing.JFrame {
     public Menu() {
         initComponents();
         this.setLocationRelativeTo(null);
+       
     }
 
     /**
@@ -124,6 +125,14 @@ public class Menu extends javax.swing.JFrame {
         llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         dispose();
     }//GEN-LAST:event_btnAutoresActionPerformed
+
+    private void BtnPiano1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPiano1ActionPerformed
+        
+    }//GEN-LAST:event_BtnPiano1ActionPerformed
+
+    private void lblNiveles_UC1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblNiveles_UC1MouseClicked
+        
+    }//GEN-LAST:event_lblNiveles_UC1MouseClicked
 
     /**
      * @param args the command line arguments
