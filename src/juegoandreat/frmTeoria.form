@@ -296,7 +296,11 @@
                                 <Property name="text" type="java.lang.String" value="Reproducir"/>
                               </Properties>
                               <Events>
+                                <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="btnReproducirP1StateChanged"/>
+                                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnReproducirP1MouseEntered"/>
+                                <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnReproducirP1MousePressed"/>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReproducirP1ActionPerformed"/>
+                                <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="btnReproducirP1KeyPressed"/>
                               </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="btnReproducirP3">

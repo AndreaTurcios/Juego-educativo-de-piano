@@ -201,9 +201,27 @@ private Timer t;
 
         btnReproducirP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/play.png"))); // NOI18N
         btnReproducirP1.setText("Reproducir");
+        btnReproducirP1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                btnReproducirP1StateChanged(evt);
+            }
+        });
+        btnReproducirP1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnReproducirP1MouseEntered(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnReproducirP1MousePressed(evt);
+            }
+        });
         btnReproducirP1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReproducirP1ActionPerformed(evt);
+            }
+        });
+        btnReproducirP1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btnReproducirP1KeyPressed(evt);
             }
         });
 
@@ -1205,6 +1223,22 @@ private Timer t;
         btnReproducir1.setEnabled(false);
    
     }//GEN-LAST:event_btnReproducir1ActionPerformed
+    
+    private void btnReproducirP1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReproducirP1MousePressed
+        
+    }//GEN-LAST:event_btnReproducirP1MousePressed
+
+    private void btnReproducirP1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReproducirP1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReproducirP1MouseEntered
+
+    private void btnReproducirP1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnReproducirP1KeyPressed
+       
+    }//GEN-LAST:event_btnReproducirP1KeyPressed
+
+    private void btnReproducirP1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_btnReproducirP1StateChanged
+       
+    }//GEN-LAST:event_btnReproducirP1StateChanged
 
     /**
      * @param args the command line arguments
