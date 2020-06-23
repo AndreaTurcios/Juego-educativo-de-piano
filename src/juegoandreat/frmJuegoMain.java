@@ -38,6 +38,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
         jCheckBox1 = new javax.swing.JCheckBox();
         jbtncancion = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         jButton11.setText("jButton9");
 
@@ -344,6 +345,8 @@ public class frmJuegoMain extends javax.swing.JFrame {
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("(Simón dice)");
 
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -366,40 +369,41 @@ public class frmJuegoMain extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnC2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(53, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(114, 114, 114)
-                .addComponent(btnCSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55)
-                .addComponent(btnDSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(125, 125, 125)
-                .addComponent(btnFSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
-                .addComponent(btnGSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61)
-                .addComponent(btnASost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(114, 114, 114)
+                        .addComponent(btnCSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(55, 55, 55)
+                        .addComponent(btnDSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(125, 125, 125)
+                        .addComponent(btnFSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(47, 47, 47)
+                        .addComponent(btnGSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(61, 61, 61)
+                        .addComponent(btnASost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jCheckBox1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnRegresar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(39, 39, 39))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jbtncancion)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(9, 9, 9)))
-                        .addGap(28, 28, 28))))
+                            .addComponent(jbtncancion, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1)
+                        .addGap(49, 49, 49)
+                        .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(19, 19, 19))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(0, 40, Short.MAX_VALUE)
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(24, 24, 24)
                         .addComponent(jCheckBox1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jbtncancion)
@@ -517,9 +521,15 @@ public class frmJuegoMain extends javax.swing.JFrame {
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
+            System.out.println("nota musica" + notaMusical.equals("#C1"));
+            if(simonDice && notaMusical.equals("#C1")){
+                System.out.println("Ingresa al metodo");
+                simonDiceJuego();
+                }
         } catch (Exception e) {
             System.err.println("Error C#1" + e);
         }
+        
     }//GEN-LAST:event_btnCSost1ActionPerformed
 
     private void btnD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnD1ActionPerformed
@@ -545,8 +555,8 @@ public class frmJuegoMain extends javax.swing.JFrame {
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
-             System.out.println("nota musica" + notaMusical.equals("D1"));
-            if(simonDice && notaMusical.equals("D1")){
+             System.out.println("nota musica" + notaMusical.equals("#D1"));
+            if(simonDice && notaMusical.equals("#D1")){
                 System.out.println("Ingresa al metodo");
                 simonDiceJuego();
             }
@@ -565,9 +575,14 @@ public class frmJuegoMain extends javax.swing.JFrame {
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
+            if(simonDice && notaMusical.equals("#D1")){
+                System.out.println("Ingresa al metodo");
+                simonDiceJuego();
+                }
         } catch (Exception e) {
             System.err.println("Error D#1" + e);
         }
+       
     }//GEN-LAST:event_btnDSost1ActionPerformed
 
     private void btnE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnE1ActionPerformed
@@ -628,8 +643,8 @@ public class frmJuegoMain extends javax.swing.JFrame {
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
-              System.out.println("nota musica" + notaMusical.equals("F1"));
-            if(simonDice && notaMusical.equals("F1")){
+              System.out.println("nota musica" + notaMusical.equals("#F1"));
+            if(simonDice && notaMusical.equals("#F1")){
                 System.out.println("Ingresa al metodo");
                 simonDiceJuego();
             }
@@ -647,9 +662,16 @@ public class frmJuegoMain extends javax.swing.JFrame {
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
+            System.out.println("nota musica" + notaMusical.equals("#F1"));
+            if(simonDice && notaMusical.equals("#F1")){
+                System.out.println("Ingresa al metodo");
+                simonDiceJuego();
+                }
+            
         } catch (Exception e) {
             System.err.println("Error F#1" + e);
         }
+        
     }//GEN-LAST:event_btnFSost1ActionPerformed
 
     private void btnGSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGSost1ActionPerformed
@@ -659,9 +681,15 @@ public class frmJuegoMain extends javax.swing.JFrame {
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
+            System.out.println("nota musica" + notaMusical.equals("#G1"));
+            if(simonDice && notaMusical.equals("#G1")){
+                System.out.println("Ingresa al metodo");
+                simonDiceJuego();
+                }
         } catch (Exception e) {
             System.err.println("Error G#1" + e);
         }
+       
     }//GEN-LAST:event_btnGSost1ActionPerformed
 
     private void btnA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnA1ActionPerformed
@@ -696,11 +724,17 @@ public class frmJuegoMain extends javax.swing.JFrame {
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
+            System.out.println("nota musica" + notaMusical.equals("#A1"));
+            if(simonDice && notaMusical.equals("#A1")){
+                System.out.println("Ingresa al metodo");
+                simonDiceJuego();
+        }
         } catch (Exception e) {
             System.err.println("Error A#1" + e);
         }
+       
     }//GEN-LAST:event_btnASost1ActionPerformed
-
+            
     private void btnB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB1ActionPerformed
         System.out.println("B");
         if (jCheckBox1.isSelected ()) {
@@ -1040,8 +1074,8 @@ public class frmJuegoMain extends javax.swing.JFrame {
 
     private void simonDiceJuego(){
         //Variable global 
-        String[] l = {"C0","D0","E0", "F0","G0" };
-        String[] tecla = {"C0","D0","E0", "F0","G0" };
+        String[] l = {"C0","D0","E0", "F0","G0","#C1","#D1","#F1","#G1","#A1"};
+        String[] tecla = {"C0","D0","E0", "F0","G0","#C1","#D1","#F1","#G1","#A1" };
         Random r = new Random();
         int valorDado = r.nextInt(6);
         while (valorGlobal == valorDado){
@@ -1074,7 +1108,25 @@ public class frmJuegoMain extends javax.swing.JFrame {
                 notaMusical="G1";
                 valorGlobal =valorDado;
                 break;
-            case 5:
+            case 5: btnG1.setBackground(Color.yellow);
+                notaMusical="#C1";
+                valorGlobal =valorDado;
+                break;
+            case 6: btnG1.setBackground(Color.yellow);
+                notaMusical="#D1";
+                valorGlobal =valorDado;
+                break;
+            case 7: btnG1.setBackground(Color.yellow);
+                notaMusical="#F1";
+                valorGlobal =valorDado;
+                break;
+            case 8: btnG1.setBackground(Color.yellow);
+                notaMusical="#G1";
+                valorGlobal =valorDado;
+                break;
+            case 9: btnG1.setBackground(Color.yellow);
+                notaMusical="#A1";
+                valorGlobal =valorDado;
                 break;
         }
     }
@@ -1134,6 +1186,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton13;
     private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton jbtncancion;
