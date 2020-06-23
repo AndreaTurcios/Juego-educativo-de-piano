@@ -20,6 +20,6 @@ public class Contador_Puntaje_UC1
         System.out.println("Ingrese el puntaje: ");
         int num = sc.nextInt();
         cont = cont + num;
-        System.out.println("El puntaje final es de: " + suma);
+        //System.out.println("El puntaje final es de: " + suma);
     }
 }

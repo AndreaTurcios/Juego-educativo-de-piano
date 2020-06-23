@@ -16,8 +16,8 @@ public class FrmMenu_Niveles_UC2 extends javax.swing.JFrame {
      */
     public FrmMenu_Niveles_UC2() {
         initComponents();
-        rsscalelabel.RSScaleLabel.setScaleLabel(jFondo_Label_UC1, "src/juegoandreat/Fondo_UC1.gif");
-        rsscalelabel.RSScaleLabel.setScaleLabel(lblCerrar_UC1, "src/Imagenes/fig.png");
+        //rsscalelabel.RSScaleLabel.setScaleLabel(jFondo_Label_UC1, "src/juegoandreat/Fondo_UC1.gif");
+        //rsscalelabel.RSScaleLabel.setScaleLabel(lblCerrar_UC1, "src/Imagenes/fig.png");
     }
 
     /**

@@ -16,7 +16,7 @@ public class FrmInstrucciones_UC1 extends javax.swing.JFrame {
      */
     public FrmInstrucciones_UC1() {
         initComponents();
-        rsscalelabel.RSScaleLabel.setScaleLabel(lblFondo_Instrucciones_UC1, "src/Imagenes/Fondo_UC2.jpg");
+        //rsscalelabel.RSScaleLabel.setScaleLabel(lblFondo_Instrucciones_UC1, "src/Imagenes/Fondo_UC2.jpg");
     }
 
     /**
