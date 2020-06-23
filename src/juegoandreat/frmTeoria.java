@@ -50,6 +50,11 @@ private Timer t;
         jLabel13 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jPanel15 = new javax.swing.JPanel();
+        btnReproducir1 = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel9 = new javax.swing.JPanel();
@@ -95,6 +100,14 @@ private Timer t;
         lblNota = new javax.swing.JLabel();
         btnRevision = new javax.swing.JButton();
         jPanel14 = new javax.swing.JPanel();
+        rbOpc6 = new javax.swing.JRadioButton();
+        jLabel23 = new javax.swing.JLabel();
+        rbOpc8 = new javax.swing.JRadioButton();
+        lblInc7 = new javax.swing.JLabel();
+        lblInc8 = new javax.swing.JLabel();
+        rbOpc9 = new javax.swing.JRadioButton();
+        lblCorr3 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         btnReproducirExamen = new javax.swing.JButton();
         btnComenzar = new javax.swing.JButton();
         btnRegreso = new javax.swing.JButton();
@@ -229,9 +242,9 @@ private Timer t;
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel15)
-                .addGap(9, 9, 9)
-                .addComponent(btnReproducirP1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnReproducirP1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(9, 9, 9)
                 .addComponent(jLabel13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel10)
@@ -249,6 +262,50 @@ private Timer t;
         jScrollPane5.setViewportView(jPanel10);
 
         jTabbedPane1.addTab("Pentagrama", jScrollPane5);
+
+        btnReproducir1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/play.png"))); // NOI18N
+        btnReproducir1.setText("Reproducir");
+        btnReproducir1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReproducir1ActionPerformed(evt);
+            }
+        });
+
+        jLabel21.setText("El texto que se muestra a continuación, puede reproducirse al darle click al botón \"Reproducir\":");
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/velocidad.PNG"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel21)
+                            .addComponent(btnReproducir1)))
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel22)))
+                .addContainerGap(205, Short.MAX_VALUE))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnReproducir1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel22)
+                .addContainerGap(225, Short.MAX_VALUE))
+        );
+
+        jScrollPane3.setViewportView(jPanel15);
+
+        jTabbedPane1.addTab("Velocidad", jScrollPane3);
 
         btnReproducir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/play.png"))); // NOI18N
         btnReproducir.setText("Reproducir");
@@ -417,10 +474,10 @@ private Timer t;
         pnlResolver.setBackground(new java.awt.Color(204, 204, 204));
         pnlResolver.setMinimumSize(new java.awt.Dimension(1002, 736));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("¿Qué es un pentagrama?");
 
-        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel19.setText("¿Cuál de las figuras que se muestra a continuación tiene asignago un tiempo incorrecto?");
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Pregunta 1"));
@@ -475,7 +532,7 @@ private Timer t;
                         .addComponent(lblInc2))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                         .addComponent(rbOpc2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                         .addComponent(lblCorr1))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                         .addComponent(rbOpc1)
@@ -570,7 +627,7 @@ private Timer t;
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblInc6)
                     .addComponent(rbOpcC1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
         lblNota.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -585,27 +642,77 @@ private Timer t;
 
         jPanel14.setBorder(javax.swing.BorderFactory.createTitledBorder("Pregunta 3"));
 
+        rbOpc6.setText("Mi (E)");
+
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/notaclave.PNG"))); // NOI18N
+
+        rbOpc8.setText("Sol (G)");
+
+        lblInc7.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc7.setText("Incorrecto");
+
+        lblInc8.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc8.setText("Incorrecto");
+
+        rbOpc9.setText("La (A)");
+
+        lblCorr3.setForeground(new java.awt.Color(0, 153, 0));
+        lblCorr3.setText("Correcto");
+
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 544, Short.MAX_VALUE)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(rbOpc6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblInc7))
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addGap(132, 132, 132)
+                        .addComponent(jLabel23)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(rbOpc8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblInc8))
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(rbOpc9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblCorr3)))
+                .addContainerGap())
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 53, Short.MAX_VALUE)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc6)
+                    .addComponent(lblInc7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc8)
+                    .addComponent(lblInc8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc9)
+                    .addComponent(lblCorr3))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel20.setText("¿Qué nota es la que se encuentra ubicada en el pentagrama?");
 
         javax.swing.GroupLayout pnlResolverLayout = new javax.swing.GroupLayout(pnlResolver);
         pnlResolver.setLayout(pnlResolverLayout);
         pnlResolverLayout.setHorizontalGroup(
             pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlResolverLayout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnRevision)
-                    .addComponent(lblNota))
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(pnlResolverLayout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -614,12 +721,15 @@ private Timer t;
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(pnlResolverLayout.createSequentialGroup()
                         .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblNota)
+                            .addComponent(jLabel20)
+                            .addComponent(btnRevision)
                             .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 424, Short.MAX_VALUE))))
+                                .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(0, 430, Short.MAX_VALUE))))
         );
         pnlResolverLayout.setVerticalGroup(
             pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -632,18 +742,20 @@ private Timer t;
                 .addComponent(jLabel19)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(16, 16, 16)
+                .addComponent(jLabel20)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addComponent(lblNota)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnRevision)
-                .addContainerGap(233, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanel5.getAccessibleContext().setAccessibleName("");
 
-        jPanel7.add(pnlResolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 760, 520));
+        jPanel7.add(pnlResolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 610, 800));
 
         btnReproducirExamen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/juegoandreat/play.png"))); // NOI18N
         btnReproducirExamen.setText("Reproducir");
@@ -652,7 +764,7 @@ private Timer t;
                 btnReproducirExamenActionPerformed(evt);
             }
         });
-        jPanel7.add(btnReproducirExamen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 30));
+        jPanel7.add(btnReproducirExamen, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 30));
 
         btnComenzar.setText("Comenzar evaluación");
         btnComenzar.addActionListener(new java.awt.event.ActionListener() {
@@ -660,7 +772,7 @@ private Timer t;
                 btnComenzarActionPerformed(evt);
             }
         });
-        jPanel7.add(btnComenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, 190, 20));
+        jPanel7.add(btnComenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 10, 190, 20));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -913,6 +1025,19 @@ private Timer t;
        
     }//GEN-LAST:event_rbOpc1MouseClicked
 
+    private void btnReproducir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducir1ActionPerformed
+           try {
+            String file = "src/juegoandreat/Notas/AUDIOS/Edwin Velocidad.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Audio" + e);
+        }
+        btnReproducir1.setEnabled(false);
+   
+    }//GEN-LAST:event_btnReproducir1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -953,6 +1078,7 @@ private Timer t;
     private javax.swing.JButton btnComenzar;
     private javax.swing.JButton btnRegreso;
     private javax.swing.JButton btnReproducir;
+    private javax.swing.JButton btnReproducir1;
     private javax.swing.JButton btnReproducirExamen;
     private javax.swing.JButton btnReproducirExamen1;
     private javax.swing.JButton btnReproducirF;
@@ -972,6 +1098,10 @@ private Timer t;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -985,6 +1115,7 @@ private Timer t;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -995,6 +1126,7 @@ private Timer t;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
@@ -1002,12 +1134,15 @@ private Timer t;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel lblCorr1;
     private javax.swing.JLabel lblCorr2;
+    private javax.swing.JLabel lblCorr3;
     private javax.swing.JLabel lblInc1;
     private javax.swing.JLabel lblInc2;
     private javax.swing.JLabel lblInc3;
     private javax.swing.JLabel lblInc4;
     private javax.swing.JLabel lblInc5;
     private javax.swing.JLabel lblInc6;
+    private javax.swing.JLabel lblInc7;
+    private javax.swing.JLabel lblInc8;
     private javax.swing.JLabel lblNota;
     private javax.swing.JLabel lblTiempo;
     private javax.swing.JPanel pnlResolver;
@@ -1016,7 +1151,10 @@ private Timer t;
     private javax.swing.JRadioButton rbOpc3;
     private javax.swing.JRadioButton rbOpc4;
     private javax.swing.JRadioButton rbOpc5;
+    private javax.swing.JRadioButton rbOpc6;
     private javax.swing.JRadioButton rbOpc7;
+    private javax.swing.JRadioButton rbOpc8;
+    private javax.swing.JRadioButton rbOpc9;
     private javax.swing.JRadioButton rbOpcC;
     private javax.swing.JRadioButton rbOpcC1;
     // End of variables declaration//GEN-END:variables
