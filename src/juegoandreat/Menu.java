@@ -19,7 +19,7 @@ public class Menu extends javax.swing.JFrame {
     public Menu() {
         initComponents();
         this.setLocationRelativeTo(null);
-        rsscalelabel.RSScaleLabel.setScaleLabel(lblNiveles_UC1, "src/Imagenes/Niveles_UC1.jpg");
+       
     }
 
     /**
@@ -147,17 +147,11 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAutoresActionPerformed
 
     private void BtnPiano1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPiano1ActionPerformed
-        FrmMenu_Niveles_UC2 llamar = new FrmMenu_Niveles_UC2();
-        llamar.setVisible(true);
-        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        dispose();
+        
     }//GEN-LAST:event_BtnPiano1ActionPerformed
 
     private void lblNiveles_UC1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblNiveles_UC1MouseClicked
-        FrmMenu_Niveles_UC2 llamar = new FrmMenu_Niveles_UC2();
-        llamar.setVisible(true);
-        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        dispose();
+        
     }//GEN-LAST:event_lblNiveles_UC1MouseClicked
 
     /**
