@@ -16,6 +16,12 @@
     </Component>
     <Component class="javax.swing.ButtonGroup" name="Pregunta7">
     </Component>
+    <Component class="javax.swing.ButtonGroup" name="Pregunta8">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="Pregunta9">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="Pregunta10">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -694,7 +700,7 @@
                                   </Properties>
                                   <Constraints>
                                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                      <AbsoluteConstraints x="0" y="50" width="690" height="2170"/>
+                                      <AbsoluteConstraints x="-10" y="50" width="680" height="2330"/>
                                     </Constraint>
                                   </Constraints>
 
@@ -708,37 +714,56 @@
                                                       <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="32767" attributes="0"/>
                                                   </Group>
-                                                  <Group type="102" attributes="0">
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="jPanel15" max="32767" attributes="0"/>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="jPanel21" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="jPanel20" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="jPanel15" alignment="0" max="32767" attributes="0"/>
                                                           <Component id="jPanel18" alignment="0" max="32767" attributes="0"/>
                                                           <Component id="jPanel13" alignment="0" max="32767" attributes="0"/>
                                                           <Component id="jPanel17" alignment="0" max="32767" attributes="0"/>
                                                           <Component id="jPanel16" alignment="0" max="32767" attributes="0"/>
                                                           <Component id="jPanel14" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
-                                                          <Group type="102" alignment="0" attributes="0">
-                                                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                                                              <Component id="btnRevision" min="-2" max="-2" attributes="0"/>
-                                                              <EmptySpace max="-2" attributes="0"/>
-                                                              <Component id="lblNota" min="-2" max="-2" attributes="0"/>
-                                                          </Group>
-                                                          <Group type="102" alignment="0" attributes="0">
-                                                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                                              <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                                                          </Group>
-                                                          <Group type="102" alignment="0" attributes="0">
-                                                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                                              <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
-                                                          </Group>
                                                           <Component id="jPanel19" alignment="0" max="32767" attributes="0"/>
+                                                          <Group type="102" alignment="0" attributes="0">
+                                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                                  <Component id="jLabel27" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                                  <Component id="jLabel26" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                                  <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                                  <Component id="jLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                                  <Component id="jLabel25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                                  <Group type="102" alignment="0" attributes="0">
+                                                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                                                      <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                                                                  </Group>
+                                                                  <Group type="102" alignment="0" attributes="0">
+                                                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                                                      <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
+                                                                  </Group>
+                                                                  <Group type="102" alignment="0" attributes="0">
+                                                                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                                          <Component id="btnRevision" min="-2" max="-2" attributes="0"/>
+                                                                          <Group type="102" attributes="0">
+                                                                              <Component id="lblNota" min="-2" max="-2" attributes="0"/>
+                                                                              <EmptySpace max="-2" attributes="0"/>
+                                                                              <Component id="lbldsf" min="-2" max="-2" attributes="0"/>
+                                                                          </Group>
+                                                                      </Group>
+                                                                  </Group>
+                                                              </Group>
+                                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                          </Group>
                                                       </Group>
                                                       <EmptySpace min="-2" pref="373" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" attributes="0">
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
@@ -779,12 +804,22 @@
                                               <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="jPanel15" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace pref="430" max="32767" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jPanel20" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jPanel21" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="3" attributes="0">
                                                   <Component id="lblNota" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="btnRevision" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lbldsf" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btnRevision" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace pref="145" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
@@ -1744,7 +1779,7 @@
                                                       <Component id="rbOpc26" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="lblInc21" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <EmptySpace pref="52" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                         </DimensionLayout>
@@ -1820,7 +1855,7 @@
                                       <Properties>
                                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                                            <TitledBorder title="Pregunta 3"/>
+                                            <TitledBorder title="Pregunta 8"/>
                                           </Border>
                                         </Property>
                                       </Properties>
@@ -1828,38 +1863,36 @@
                                       <Layout>
                                         <DimensionLayout dim="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="102" attributes="0">
-                                                          <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
-                                                          <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Component id="rbOpc27" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Component id="lblCorr8" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="102" attributes="0">
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Group type="103" groupAlignment="0" attributes="0">
-                                                              <Group type="102" alignment="0" attributes="0">
-                                                                  <Component id="rbOpc27" min="-2" max="-2" attributes="0"/>
-                                                                  <EmptySpace max="32767" attributes="0"/>
-                                                                  <Component id="lblInc22" min="-2" max="-2" attributes="0"/>
-                                                              </Group>
-                                                              <Group type="102" alignment="0" attributes="0">
-                                                                  <Component id="rbOpc29" min="-2" max="-2" attributes="0"/>
-                                                                  <EmptySpace max="32767" attributes="0"/>
-                                                                  <Component id="lblInc23" min="-2" max="-2" attributes="0"/>
-                                                              </Group>
-                                                              <Group type="102" alignment="0" attributes="0">
-                                                                  <Component id="rbOpc30" min="-2" max="-2" attributes="0"/>
-                                                                  <EmptySpace max="32767" attributes="0"/>
-                                                                  <Component id="lblInc24" min="-2" max="-2" attributes="0"/>
-                                                              </Group>
-                                                          </Group>
+                                                          <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
+                                                          <Component id="jLabel28" min="-2" pref="236" max="-2" attributes="0"/>
+                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                                       </Group>
                                                       <Group type="102" alignment="0" attributes="0">
                                                           <EmptySpace max="-2" attributes="0"/>
                                                           <Component id="rbOpc28" min="-2" max="-2" attributes="0"/>
                                                           <EmptySpace max="32767" attributes="0"/>
-                                                          <Component id="lblCorr8" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="lblInc22" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Component id="rbOpc29" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Component id="lblInc23" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Component id="rbOpc30" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Component id="lblInc24" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                                   <EmptySpace max="-2" attributes="0"/>
@@ -1869,29 +1902,27 @@
                                         <DimensionLayout dim="1">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jLabel28" min="-2" pref="159" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="jLabel28" min="-2" pref="234" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="lblCorr8" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="rbOpc27" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="lblInc22" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="3" attributes="0">
                                                       <Component id="rbOpc28" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="lblCorr8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lblInc22" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="3" attributes="0">
                                                       <Component id="rbOpc29" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="lblInc23" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="3" attributes="0">
                                                       <Component id="rbOpc30" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="lblInc24" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                         </DimensionLayout>
@@ -1900,7 +1931,7 @@
                                         <Component class="javax.swing.JRadioButton" name="rbOpc27">
                                           <Properties>
                                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                                              <ComponentRef name="Pregunta3"/>
+                                              <ComponentRef name="Pregunta8"/>
                                             </Property>
                                             <Property name="text" type="java.lang.String" value="Mi (E)"/>
                                           </Properties>
@@ -1908,16 +1939,16 @@
                                         <Component class="javax.swing.JLabel" name="jLabel28">
                                           <Properties>
                                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                              <Image iconType="3" name="/notaclave.PNG"/>
+                                              <Image iconType="3" name="/Imagenes/notaexa.PNG"/>
                                             </Property>
                                           </Properties>
                                         </Component>
                                         <Component class="javax.swing.JRadioButton" name="rbOpc28">
                                           <Properties>
                                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                                              <ComponentRef name="Pregunta3"/>
+                                              <ComponentRef name="Pregunta8"/>
                                             </Property>
-                                            <Property name="text" type="java.lang.String" value="Sol (G)"/>
+                                            <Property name="text" type="java.lang.String" value="La (A)"/>
                                           </Properties>
                                         </Component>
                                         <Component class="javax.swing.JLabel" name="lblInc22">
@@ -1939,9 +1970,9 @@
                                         <Component class="javax.swing.JRadioButton" name="rbOpc29">
                                           <Properties>
                                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                                              <ComponentRef name="Pregunta3"/>
+                                              <ComponentRef name="Pregunta8"/>
                                             </Property>
-                                            <Property name="text" type="java.lang.String" value="La (A)"/>
+                                            <Property name="text" type="java.lang.String" value="Do (C)"/>
                                           </Properties>
                                         </Component>
                                         <Component class="javax.swing.JLabel" name="lblCorr8">
@@ -1955,7 +1986,7 @@
                                         <Component class="javax.swing.JRadioButton" name="rbOpc30">
                                           <Properties>
                                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                                              <ComponentRef name="Pregunta3"/>
+                                              <ComponentRef name="Pregunta8"/>
                                             </Property>
                                             <Property name="text" type="java.lang.String" value="Re (D)"/>
                                           </Properties>
@@ -1976,6 +2007,300 @@
                                           <Font name="Tahoma" size="12" style="1"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="&#xbf;Qu&#xe9; nota es la que se encuentra ubicada en el pentagrama?"/>
+                                      </Properties>
+                                    </Component>
+                                    <Component class="javax.swing.JLabel" name="jLabel30">
+                                      <Properties>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Tahoma" size="12" style="1"/>
+                                        </Property>
+                                        <Property name="text" type="java.lang.String" value="&#xbf;Para qu&#xe9; sirve la clave?"/>
+                                      </Properties>
+                                    </Component>
+                                    <Container class="javax.swing.JPanel" name="jPanel20">
+                                      <Properties>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                            <TitledBorder title="Pregunta 9"/>
+                                          </Border>
+                                        </Property>
+                                      </Properties>
+
+                                      <Layout>
+                                        <DimensionLayout dim="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="rbOpc34" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Component id="lblCorr9" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="1" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="rbOpc33" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="rbOpc31" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="rbOpc32" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                                                  <Component id="lblInc26" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                                  <Component id="lblInc25" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                              </Group>
+                                                              <Component id="lblInc27" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                        </DimensionLayout>
+                                        <DimensionLayout dim="1">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="rbOpc31" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lblInc25" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="rbOpc32" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lblInc27" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="rbOpc33" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lblInc26" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="rbOpc34" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lblCorr9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                        </DimensionLayout>
+                                      </Layout>
+                                      <SubComponents>
+                                        <Component class="javax.swing.JRadioButton" name="rbOpc31">
+                                          <Properties>
+                                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                              <ComponentRef name="Pregunta9"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Sirve para saber c&#xf3;mo se tocar&#xe1;"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JRadioButton" name="rbOpc32">
+                                          <Properties>
+                                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                              <ComponentRef name="Pregunta9"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Sirve para saber la tonalidad de la canci&#xf3;n"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JLabel" name="lblInc25">
+                                          <Properties>
+                                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                              <Color blue="0" green="0" red="ff" type="rgb"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Incorrecto"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JLabel" name="lblInc26">
+                                          <Properties>
+                                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                              <Color blue="0" green="0" red="ff" type="rgb"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Incorrecto"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JRadioButton" name="rbOpc33">
+                                          <Properties>
+                                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                              <ComponentRef name="Pregunta9"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Sirve para saver la velocidad a la que se tocar&#xe1; en la partitura o composici&#xf3;n"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JLabel" name="lblCorr9">
+                                          <Properties>
+                                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                              <Color blue="0" green="99" red="0" type="rgb"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Correcto"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JRadioButton" name="rbOpc34">
+                                          <Properties>
+                                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                              <ComponentRef name="Pregunta9"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Sirve para adem&#xe1;s de saber en qu&#xe9; octava est&#xe1; posicionado,saber la nota asignada"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JLabel" name="lblInc27">
+                                          <Properties>
+                                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                              <Color blue="0" green="0" red="ff" type="rgb"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Incorrecto"/>
+                                          </Properties>
+                                        </Component>
+                                      </SubComponents>
+                                    </Container>
+                                    <Container class="javax.swing.JPanel" name="jPanel21">
+                                      <Properties>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                            <TitledBorder title="Pregunta 10"/>
+                                          </Border>
+                                        </Property>
+                                      </Properties>
+
+                                      <Layout>
+                                        <DimensionLayout dim="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="1" attributes="0">
+                                                      <Group type="102" alignment="1" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="rbOpc37" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="rbOpc35" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="lblInc29" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="lblInc28" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="rbOpc38" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Component id="lblCorr10" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="rbOpc36" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Component id="lblInc30" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                        </DimensionLayout>
+                                        <DimensionLayout dim="1">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="rbOpc35" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lblInc28" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="rbOpc38" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lblCorr10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="rbOpc37" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lblInc29" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="rbOpc36" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lblInc30" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace pref="12" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                        </DimensionLayout>
+                                      </Layout>
+                                      <SubComponents>
+                                        <Component class="javax.swing.JRadioButton" name="rbOpc35">
+                                          <Properties>
+                                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                              <ComponentRef name="Pregunta10"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Equivale a 2 tiempos"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JRadioButton" name="rbOpc36">
+                                          <Properties>
+                                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                              <ComponentRef name="Pregunta10"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Equivale a 1 tiempo"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JLabel" name="lblInc28">
+                                          <Properties>
+                                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                              <Color blue="0" green="0" red="ff" type="rgb"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Incorrecto"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JLabel" name="lblInc29">
+                                          <Properties>
+                                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                              <Color blue="0" green="0" red="ff" type="rgb"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Incorrecto"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JRadioButton" name="rbOpc37">
+                                          <Properties>
+                                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                              <ComponentRef name="Pregunta10"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Equivale al tiempo de la nota que le antecede"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JLabel" name="lblCorr10">
+                                          <Properties>
+                                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                              <Color blue="0" green="99" red="0" type="rgb"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Correcto"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JRadioButton" name="rbOpc38">
+                                          <Properties>
+                                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                                              <ComponentRef name="Pregunta10"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="No se le puede asignar un tiempo a una nota"/>
+                                          </Properties>
+                                        </Component>
+                                        <Component class="javax.swing.JLabel" name="lblInc30">
+                                          <Properties>
+                                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                              <Color blue="0" green="0" red="ff" type="rgb"/>
+                                            </Property>
+                                            <Property name="text" type="java.lang.String" value="Incorrecto"/>
+                                          </Properties>
+                                        </Component>
+                                      </SubComponents>
+                                    </Container>
+                                    <Component class="javax.swing.JLabel" name="jLabel31">
+                                      <Properties>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Tahoma" size="12" style="1"/>
+                                        </Property>
+                                        <Property name="text" type="java.lang.String" value="&#xbf;A cu&#xe1;ntos tiempos equivale la nota Mi(E)?"/>
+                                      </Properties>
+                                    </Component>
+                                    <Component class="javax.swing.JLabel" name="lbldsf">
+                                      <Properties>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Tahoma" size="18" style="0"/>
+                                        </Property>
+                                        <Property name="text" type="java.lang.String" value="/10"/>
                                       </Properties>
                                     </Component>
                                   </SubComponents>
@@ -2087,6 +2412,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Ir al siguiente nivel"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNivel2ActionPerformed"/>
+                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="300" y="390" width="-1" height="-1"/>
