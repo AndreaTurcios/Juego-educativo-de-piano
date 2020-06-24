@@ -1388,7 +1388,7 @@ private Timer t;
         //6041 equivale a 10 min
         //604 a 1 min
         //100 a 10 segundos
-        t = new Timer(100,ac);
+        t = new Timer(6041,ac);
         t.start();
                 
     }//GEN-LAST:event_btnComenzarActionPerformed
