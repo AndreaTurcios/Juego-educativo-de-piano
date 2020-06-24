@@ -1,10 +1,11 @@
 package juegoandreat;
-import java.awt.event.ActionListener;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import javax.swing.JFrame;
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 import javax.swing.Timer;
 
@@ -23,6 +24,7 @@ private Timer t;
         //lblInc2.setVisible(false);
         //lblInc3.setVisible(false);
         //lblCorr1.setVisible(false);
+        
     }
 
     
@@ -35,6 +37,8 @@ private Timer t;
         Pregunta3 = new javax.swing.ButtonGroup();
         Pregunta4 = new javax.swing.ButtonGroup();
         Pregunta5 = new javax.swing.ButtonGroup();
+        Pregunta6 = new javax.swing.ButtonGroup();
+        Pregunta7 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -55,11 +59,6 @@ private Timer t;
         jLabel13 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jPanel15 = new javax.swing.JPanel();
-        btnReproducir1 = new javax.swing.JButton();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel9 = new javax.swing.JPanel();
@@ -145,6 +144,27 @@ private Timer t;
         rbOpc22 = new javax.swing.JRadioButton();
         lblInc18 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jPanel19 = new javax.swing.JPanel();
+        rbOpc23 = new javax.swing.JRadioButton();
+        rbOpc24 = new javax.swing.JRadioButton();
+        lblInc19 = new javax.swing.JLabel();
+        lblInc20 = new javax.swing.JLabel();
+        rbOpc25 = new javax.swing.JRadioButton();
+        lblCorr7 = new javax.swing.JLabel();
+        rbOpc26 = new javax.swing.JRadioButton();
+        lblInc21 = new javax.swing.JLabel();
+        jPanel15 = new javax.swing.JPanel();
+        rbOpc27 = new javax.swing.JRadioButton();
+        jLabel28 = new javax.swing.JLabel();
+        rbOpc28 = new javax.swing.JRadioButton();
+        lblInc22 = new javax.swing.JLabel();
+        lblInc23 = new javax.swing.JLabel();
+        rbOpc29 = new javax.swing.JRadioButton();
+        lblCorr8 = new javax.swing.JLabel();
+        rbOpc30 = new javax.swing.JRadioButton();
+        lblInc24 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
         btnReproducirExamen = new javax.swing.JButton();
         btnComenzar = new javax.swing.JButton();
         btnRegreso = new javax.swing.JButton();
@@ -153,6 +173,8 @@ private Timer t;
         iconoMuerto = new javax.swing.JLabel();
         lblVidas = new javax.swing.JLabel();
         btnNivel2 = new javax.swing.JButton();
+        lblTiempo = new javax.swing.JLabel();
+        pbTiempo = new javax.swing.JProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -325,50 +347,6 @@ private Timer t;
         jScrollPane5.setViewportView(jPanel10);
 
         jTabbedPane1.addTab("Pentagrama", jScrollPane5);
-
-        btnReproducir1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/play.png"))); // NOI18N
-        btnReproducir1.setText("Reproducir");
-        btnReproducir1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnReproducir1ActionPerformed(evt);
-            }
-        });
-
-        jLabel21.setText("El texto que se muestra a continuación, puede reproducirse al darle click al botón \"Reproducir\":");
-
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/velocidad.PNG"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel15Layout.createSequentialGroup()
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel21)
-                            .addComponent(btnReproducir1)))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel22)))
-                .addContainerGap(205, Short.MAX_VALUE))
-        );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel15Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel21)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnReproducir1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel22)
-                .addContainerGap(225, Short.MAX_VALUE))
-        );
-
-        jScrollPane3.setViewportView(jPanel15);
-
-        jTabbedPane1.addTab("Velocidad", jScrollPane3);
 
         btnReproducir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/play.png"))); // NOI18N
         btnReproducir.setText("Reproducir");
@@ -671,7 +649,7 @@ private Timer t;
                         .addComponent(lblCorr2))
                     .addGroup(jPanel13Layout.createSequentialGroup()
                         .addComponent(rbOpcC1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 345, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblInc6)))
                 .addContainerGap())
         );
@@ -749,7 +727,7 @@ private Timer t;
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addGap(132, 132, 132)
                         .addComponent(jLabel23)
-                        .addGap(0, 131, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(rbOpc8)
@@ -830,20 +808,16 @@ private Timer t;
             .addGroup(jPanel16Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addComponent(rbOpc14)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 392, Short.MAX_VALUE)
-                        .addComponent(lblInc12))
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(rbOpc13)
-                            .addComponent(rbOpc11)
-                            .addComponent(rbOpc12))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 314, Short.MAX_VALUE)
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCorr4, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblInc10, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblInc11, javax.swing.GroupLayout.Alignment.TRAILING))))
+                    .addComponent(rbOpc14)
+                    .addComponent(rbOpc13)
+                    .addComponent(rbOpc11)
+                    .addComponent(rbOpc12))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblInc12, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblCorr4, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblInc10, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblInc11, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(10, 10, 10))
         );
         jPanel16Layout.setVerticalGroup(
@@ -944,11 +918,11 @@ private Timer t;
 
         jPanel18.setBorder(javax.swing.BorderFactory.createTitledBorder("Pregunta 6"));
 
-        Pregunta5.add(rbOpc19);
-        rbOpc19.setText("kjkjk");
+        Pregunta6.add(rbOpc19);
+        rbOpc19.setText("Aquel ritmo que nos indica los tiempo por notas");
 
-        Pregunta5.add(rbOpc20);
-        rbOpc20.setText("Aquel que ");
+        Pregunta6.add(rbOpc20);
+        rbOpc20.setText("Aquel que nos brinda apoyo con los tiempos");
 
         lblInc16.setForeground(new java.awt.Color(255, 0, 0));
         lblInc16.setText("Incorrecto");
@@ -956,13 +930,13 @@ private Timer t;
         lblInc17.setForeground(new java.awt.Color(255, 0, 0));
         lblInc17.setText("Incorrecto");
 
-        Pregunta5.add(rbOpc21);
-        rbOpc21.setText("8 notas, de ahí la escala sube de nuevo");
+        Pregunta6.add(rbOpc21);
+        rbOpc21.setText("Aquel que nos brinda apoyo total en la velocidad");
 
         lblCorr6.setForeground(new java.awt.Color(0, 153, 0));
         lblCorr6.setText("Correcto");
 
-        Pregunta5.add(rbOpc22);
+        Pregunta6.add(rbOpc22);
         rbOpc22.setText("Aquel ritmo que nos hace mover los pies o alguna parte del cuerpo al seguir la melodía ");
 
         lblInc18.setForeground(new java.awt.Color(255, 0, 0));
@@ -1016,6 +990,168 @@ private Timer t;
         jLabel26.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel26.setText("¿Qué es el pulso?");
 
+        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel27.setText("¿Cuál es la quinta nota en una escala?");
+
+        jPanel19.setBorder(javax.swing.BorderFactory.createTitledBorder("Pregunta 7"));
+
+        Pregunta7.add(rbOpc23);
+        rbOpc23.setText("Do (C)");
+
+        Pregunta7.add(rbOpc24);
+        rbOpc24.setText("Sol (G)");
+
+        lblInc19.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc19.setText("Incorrecto");
+
+        lblInc20.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc20.setText("Incorrecto");
+
+        Pregunta7.add(rbOpc25);
+        rbOpc25.setText("Fa (F)");
+
+        lblCorr7.setForeground(new java.awt.Color(0, 153, 0));
+        lblCorr7.setText("Correcto");
+
+        Pregunta7.add(rbOpc26);
+        rbOpc26.setText("Si (B)");
+
+        lblInc21.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc21.setText("Incorrecto");
+
+        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
+        jPanel19.setLayout(jPanel19Layout);
+        jPanel19Layout.setHorizontalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel19Layout.createSequentialGroup()
+                        .addComponent(rbOpc26)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblInc21))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+                        .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbOpc25)
+                            .addComponent(rbOpc23)
+                            .addComponent(rbOpc24))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblInc20)
+                                .addComponent(lblInc19, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(lblCorr7, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addGap(10, 10, 10))
+        );
+        jPanel19Layout.setVerticalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc23)
+                    .addComponent(lblInc19))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc24)
+                    .addComponent(lblCorr7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc25)
+                    .addComponent(lblInc20))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc26)
+                    .addComponent(lblInc21))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel15.setBorder(javax.swing.BorderFactory.createTitledBorder("Pregunta 3"));
+
+        Pregunta3.add(rbOpc27);
+        rbOpc27.setText("Mi (E)");
+
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/notaclave.PNG"))); // NOI18N
+
+        Pregunta3.add(rbOpc28);
+        rbOpc28.setText("Sol (G)");
+
+        lblInc22.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc22.setText("Incorrecto");
+
+        lblInc23.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc23.setText("Incorrecto");
+
+        Pregunta3.add(rbOpc29);
+        rbOpc29.setText("La (A)");
+
+        lblCorr8.setForeground(new java.awt.Color(0, 153, 0));
+        lblCorr8.setText("Correcto");
+
+        Pregunta3.add(rbOpc30);
+        rbOpc30.setText("Re (D)");
+
+        lblInc24.setForeground(new java.awt.Color(255, 0, 0));
+        lblInc24.setText("Incorrecto");
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGap(132, 132, 132)
+                        .addComponent(jLabel28)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel15Layout.createSequentialGroup()
+                                .addComponent(rbOpc27)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lblInc22))
+                            .addGroup(jPanel15Layout.createSequentialGroup()
+                                .addComponent(rbOpc29)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lblInc23))
+                            .addGroup(jPanel15Layout.createSequentialGroup()
+                                .addComponent(rbOpc30)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lblInc24))))
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(rbOpc28)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblCorr8)))
+                .addContainerGap())
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc27)
+                    .addComponent(lblInc22))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc28)
+                    .addComponent(lblCorr8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc29)
+                    .addComponent(lblInc23))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbOpc30)
+                    .addComponent(lblInc24))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel29.setText("¿Qué nota es la que se encuentra ubicada en el pentagrama?");
+
         javax.swing.GroupLayout pnlResolverLayout = new javax.swing.GroupLayout(pnlResolver);
         pnlResolver.setLayout(pnlResolverLayout);
         pnlResolverLayout.setHorizontalGroup(
@@ -1024,35 +1160,35 @@ private Timer t;
                 .addGap(22, 22, 22)
                 .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlResolverLayout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(jLabel29)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(pnlResolverLayout.createSequentialGroup()
                         .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel27)
                             .addComponent(jLabel26)
-                            .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jPanel18, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel20)
-                                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel24)
-                                    .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(jPanel17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel25)
-                                            .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                .addComponent(jPanel16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addGroup(pnlResolverLayout.createSequentialGroup()
-                                                    .addComponent(btnRevision)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(lblNota)
-                                                    .addGap(436, 436, 436)))))
-                                    .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel19)
-                                        .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(pnlResolverLayout.createSequentialGroup()
-                                        .addGap(6, 6, 6)
-                                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGap(0, 415, Short.MAX_VALUE))))
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel20)
+                            .addComponent(jLabel24)
+                            .addComponent(jLabel25)
+                            .addGroup(pnlResolverLayout.createSequentialGroup()
+                                .addGap(15, 15, 15)
+                                .addComponent(btnRevision)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblNota))
+                            .addGroup(pnlResolverLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jLabel19))
+                            .addGroup(pnlResolverLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(373, 373, 373))))
         );
         pnlResolverLayout.setVerticalGroup(
             pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1077,11 +1213,19 @@ private Timer t;
                 .addComponent(jLabel25)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel26)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 368, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel27)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 430, Short.MAX_VALUE)
                 .addGroup(pnlResolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNota)
                     .addComponent(btnRevision))
@@ -1090,7 +1234,7 @@ private Timer t;
 
         jPanel5.getAccessibleContext().setAccessibleName("");
 
-        jPanel7.add(pnlResolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 620, 1620));
+        jPanel7.add(pnlResolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 690, 2170));
 
         btnReproducirExamen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/juegoandreat/play.png"))); // NOI18N
         btnReproducirExamen.setText("Reproducir");
@@ -1148,7 +1292,7 @@ private Timer t;
 
         iconoMuerto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/game_skull_head_skull_dead_die_death_icon_133746.png"))); // NOI18N
         iconoMuerto.setEnabled(false);
-        jPanel3.add(iconoMuerto, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 400, 30, 30));
+        jPanel3.add(iconoMuerto, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 380, 30, 30));
 
         lblVidas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblVidas.setText("3 ");
@@ -1156,6 +1300,10 @@ private Timer t;
 
         btnNivel2.setText("Ir al siguiente nivel");
         jPanel3.add(btnNivel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 390, -1, -1));
+
+        lblTiempo.setText("Tiempo límite: 10 min");
+        jPanel3.add(lblTiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, -1, -1));
+        jPanel3.add(pbTiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, -1, -1));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -1170,7 +1318,7 @@ private Timer t;
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 442, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1188,7 +1336,7 @@ private Timer t;
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1212,6 +1360,39 @@ private Timer t;
         dispose();
     }//GEN-LAST:event_btnRegresoActionPerformed
 
+    private void jTabbedPane1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTabbedPane1MouseClicked
+
+    }//GEN-LAST:event_jTabbedPane1MouseClicked
+
+    private void btnComenzarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComenzarActionPerformed
+        
+        pnlResolver.setVisible(true);
+        lblVidas.setVisible(true);
+        lblVidas.setEnabled(true);
+        
+        ac= new ActionListener() {
+            
+        @Override
+        public void actionPerformed(ActionEvent e){
+                x = x+1;
+                pbTiempo.setValue(x);
+                if (pbTiempo.getValue()==100) {
+                dispose();
+                t.stop();
+                TiempoAgotado llamar = new TiempoAgotado();
+        llamar.setVisible(true);
+        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            }
+            }
+        };
+        //6041 equivale a 10 min
+        //604 a 1 min
+        //100 a 10 segundos
+        t = new Timer(100,ac);
+        t.start();
+                
+    }//GEN-LAST:event_btnComenzarActionPerformed
+
     private void btnReproducirExamenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducirExamenActionPerformed
         System.out.println("Audio");
         try {
@@ -1224,8 +1405,142 @@ private Timer t;
             System.err.println("Audio" + e);
         }
         btnReproducirExamen.setEnabled(false);
-        
+
     }//GEN-LAST:event_btnReproducirExamenActionPerformed
+
+    private void btnRevisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRevisionActionPerformed
+        int vidas = 3;
+        lblInc1.setVisible(true);
+        lblInc2.setVisible(true);
+        lblInc3.setVisible(true);
+        lblCorr1.setVisible(true);
+        int nota=0;
+        int notafinal=0;
+        //pregunta 1
+        if (rbOpc2.isSelected()==true) {
+            System.out.println("Datos correctos");
+            nota++;
+        }else{
+            System.out.println("Datos incorrectos");
+            vidas--;
+        }
+        //pregunta2
+        if (rbOpcC.isSelected()==true) {
+            System.out.println("Datos correctos");
+            nota++;
+        }else{
+            System.out.println("Datos incorrectos");
+            vidas--;
+
+        }
+        //pregunta3
+        if (rbOpc9.isSelected()==true) {
+            System.out.println("Datos correctos");
+            nota++;
+        }else{
+            System.out.println("Datos incorrectos");
+            vidas--;
+        }
+        //pregunta4
+        if (rbOpc11.isSelected()==true) {
+            System.out.println("Datos correctos");
+            nota++;
+        }else{
+            System.out.println("Datos incorrectos");
+            vidas--;
+        }
+        //pregunta5
+        if (rbOpc16.isSelected()==true) {
+            System.out.println("Datos correctos");
+            nota++;
+        }else{
+            System.out.println("Datos incorrectos");
+            vidas--;
+        }
+        //pregunta6
+        if (rbOpc22.isSelected()==true) {
+            System.out.println("Datos correctos");
+            nota++;
+        }else{
+            System.out.println("Datos incorrectos");
+            vidas--;
+        }
+        //pregunta7
+        if (rbOpc24.isSelected()==true) {
+            System.out.println("Datos correctos");
+            nota++;
+        }else{
+            System.out.println("Datos incorrectos");
+            vidas--;
+        }
+        //vidas
+        String vidafinal= String.valueOf(vidas);
+        lblVidas.setText(vidafinal);
+        //no borrar esta parte nunca
+        String notaf = String.valueOf(nota);
+        lblNota.setText(notaf);
+        if (vidas<=0) {
+            pnlLinea.setVisible(false);
+            lblVidas.setText("Has muerto");
+            iconoMuerto.setVisible(true);
+        }
+        //nota
+        if (nota==10) {
+            btnNivel2.setVisible(true);
+        }
+        //vidas mayor a 0
+        //x=590
+        //y=380
+        //el height del panel linea es de 30
+        //el width del panel linea es de 90
+        //        if (vidas==1) {
+            //            int hei = pnlLinea.getHeight();
+            //            int wi = pnlLinea.getWidth();
+            //            System.out.println("el height del panel linea es de "+hei);
+            //            System.out.println("el width del panel linea es de "+wi);
+            //            int heig = hei/3;
+            //            int wid = wi/3;
+            //            System.out.println("el height del panel linea / 3 es de "+heig);
+            //            System.out.println("el width del panel linea / 3 es de "+wid);
+            //
+            //            lblLinea.setSize(0,0);
+            //        }
+    }//GEN-LAST:event_btnRevisionActionPerformed
+
+    private void rbOpc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbOpc1ActionPerformed
+
+    }//GEN-LAST:event_rbOpc1ActionPerformed
+
+    private void rbOpc1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbOpc1MouseClicked
+
+    }//GEN-LAST:event_rbOpc1MouseClicked
+
+    private void btnReproducirExamen1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducirExamen1ActionPerformed
+        System.out.println("Audio");
+        try {
+            String file = "src/juegoandreat/Notas/AUDIOS/AudioResumenAndrea.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Audio" + e);
+        }
+        btnReproducirExamen1.setEnabled(false);
+    }//GEN-LAST:event_btnReproducirExamen1ActionPerformed
+
+    private void btnReproducirFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducirFActionPerformed
+        System.out.println("Audio");
+        try {
+            String file = "src/juegoandreat/Notas/AUDIOS/EstefanyAudioFiguras.wav";
+            InputStream in = new FileInputStream(file);
+            AudioStream audioCsos1 = new AudioStream(in);
+            AudioPlayer.player.start(audioCsos1);
+        } catch (Exception e) {
+            System.err.println("Audio" + e);
+        }
+        btnReproducirF.setEnabled(false);
+
+    }//GEN-LAST:event_btnReproducirFActionPerformed
 
     private void btnReproducirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducirActionPerformed
         System.out.println("Audio");
@@ -1241,26 +1556,25 @@ private Timer t;
         btnReproducir.setEnabled(false);
     }//GEN-LAST:event_btnReproducirActionPerformed
 
-    private void btnReproducirFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducirFActionPerformed
-         System.out.println("Audio");
+    private void btnReproducirP3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducirP3ActionPerformed
+        System.out.println("Audio");
         try {
-            String file = "src/juegoandreat/Notas/AUDIOS/EstefanyAudioFiguras.wav";
+            String file = "src/juegoandreat/Notas/AUDIOS/AudioAndreaPenta2.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
         } catch (Exception e) {
             System.err.println("Audio" + e);
         }
-        btnReproducirF.setEnabled(false);
-   
-    }//GEN-LAST:event_btnReproducirFActionPerformed
+        btnReproducirP3.setEnabled(false);
+    }//GEN-LAST:event_btnReproducirP3ActionPerformed
 
-    private void jTabbedPane1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTabbedPane1MouseClicked
-    
-    }//GEN-LAST:event_jTabbedPane1MouseClicked
+    private void btnReproducirP1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnReproducirP1KeyPressed
+
+    }//GEN-LAST:event_btnReproducirP1KeyPressed
 
     private void btnReproducirP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducirP1ActionPerformed
-    System.out.println("Audio");
+        System.out.println("Audio");
         try {
             String file = "src/juegoandreat/Notas/AUDIOS/AudioAndreaPenta1.wav";
             InputStream in = new FileInputStream(file);
@@ -1272,18 +1586,17 @@ private Timer t;
         btnReproducirP1.setEnabled(false);
     }//GEN-LAST:event_btnReproducirP1ActionPerformed
 
-    private void btnReproducirExamen1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducirExamen1ActionPerformed
-        System.out.println("Audio");
-        try {
-            String file = "src/juegoandreat/Notas/AUDIOS/AudioResumenAndrea.wav";
-            InputStream in = new FileInputStream(file);
-            AudioStream audioCsos1 = new AudioStream(in);
-            AudioPlayer.player.start(audioCsos1);
-        } catch (Exception e) {
-            System.err.println("Audio" + e);
-        }
-        btnReproducirExamen1.setEnabled(false);
-    }//GEN-LAST:event_btnReproducirExamen1ActionPerformed
+    private void btnReproducirP1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReproducirP1MousePressed
+
+    }//GEN-LAST:event_btnReproducirP1MousePressed
+
+    private void btnReproducirP1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReproducirP1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReproducirP1MouseEntered
+
+    private void btnReproducirP1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_btnReproducirP1StateChanged
+
+    }//GEN-LAST:event_btnReproducirP1StateChanged
 
     private void btnReproducirP2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducirP2ActionPerformed
         System.out.println("Audio");
@@ -1298,146 +1611,7 @@ private Timer t;
         btnReproducirP2.setEnabled(false);
     }//GEN-LAST:event_btnReproducirP2ActionPerformed
 
-    private void btnReproducirP3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducirP3ActionPerformed
-       System.out.println("Audio");
-        try {
-            String file = "src/juegoandreat/Notas/AUDIOS/AudioAndreaPenta2.wav";
-            InputStream in = new FileInputStream(file);
-            AudioStream audioCsos1 = new AudioStream(in);
-            AudioPlayer.player.start(audioCsos1);
-        } catch (Exception e) {
-            System.err.println("Audio" + e);
-        }
-        btnReproducirP3.setEnabled(false);
-    }//GEN-LAST:event_btnReproducirP3ActionPerformed
-
-    private void btnComenzarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComenzarActionPerformed
-        pnlResolver.setVisible(true);
-        lblVidas.setVisible(true);
-        lblVidas.setEnabled(true);
-    }//GEN-LAST:event_btnComenzarActionPerformed
-
-
-    private void btnRevisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRevisionActionPerformed
-       int vidas = 3;
-        lblInc1.setVisible(true);
-        lblInc2.setVisible(true);
-        lblInc3.setVisible(true);
-        lblCorr1.setVisible(true);
-        int nota=0;
-        int notafinal=0;
-        //pregunta 1
-        if (rbOpc2.isSelected()==true) {
-            System.out.println("Datos correctos");
-            nota++;
-        }else{
-           System.out.println("Datos incorrectos");
-           vidas--;
-          }         
-        //pregunta2
-        if (rbOpcC.isSelected()==true) {
-            System.out.println("Datos correctos");
-            nota++;
-        }else{
-           System.out.println("Datos incorrectos");
-           vidas--;
-           
-          }   
-        //pregunta3
-        if (rbOpc9.isSelected()==true) {
-            System.out.println("Datos correctos");
-            nota++;
-        }else{
-           System.out.println("Datos incorrectos");
-           vidas--;
-          } 
-        //pregunta4
-        if (rbOpc11.isSelected()==true) {
-            System.out.println("Datos correctos");
-            nota++;
-        }else{
-           System.out.println("Datos incorrectos");
-           vidas--;
-          } 
-        //pregunta5
-         if (rbOpc16.isSelected()==true) {
-            System.out.println("Datos correctos");
-            nota++;
-        }else{
-           System.out.println("Datos incorrectos");
-           vidas--;
-          } 
-        //vidas
-      String vidafinal= String.valueOf(vidas);
-      lblVidas.setText(vidafinal);
-      //no borrar esta parte nunca 
-       String notaf = String.valueOf(nota);
-       lblNota.setText(notaf);
-        if (vidas<=0) {
-            pnlLinea.setVisible(false);
-            lblVidas.setText("Has muerto");
-            iconoMuerto.setVisible(true);
-        }
-        //nota
-        if (nota==10) {
-            btnNivel2.setVisible(true);
-        }
-        //vidas mayor a 0
-        //x=590
-        //y=380
-        //el height del panel linea es de 30
-        //el width del panel linea es de 90
-//        if (vidas==1) {
-//            int hei = pnlLinea.getHeight();
-//            int wi = pnlLinea.getWidth();
-//            System.out.println("el height del panel linea es de "+hei);
-//            System.out.println("el width del panel linea es de "+wi);
-//            int heig = hei/3;
-//            int wid = wi/3;
-//            System.out.println("el height del panel linea / 3 es de "+heig);
-//            System.out.println("el width del panel linea / 3 es de "+wid);
-//            
-//            lblLinea.setSize(0,0);
-//        }
-    }//GEN-LAST:event_btnRevisionActionPerformed
-
-    private void rbOpc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbOpc1ActionPerformed
-        
-    }//GEN-LAST:event_rbOpc1ActionPerformed
-
-    private void rbOpc1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbOpc1MouseClicked
-       
-    }//GEN-LAST:event_rbOpc1MouseClicked
-
-    private void btnReproducir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReproducir1ActionPerformed
-        System.out.println("Audio");
-        try {
-            String file = "src/juegoandreat/Notas/AUDIOS/EdwinVelocidad.wav";
-            InputStream in = new FileInputStream(file);
-            AudioStream audioCsos1 = new AudioStream(in);
-            AudioPlayer.player.start(audioCsos1);
-        } catch (Exception e) {
-            System.err.println("Audio" + e);
-        }
-        btnReproducir1.setEnabled(false);                  
-    }//GEN-LAST:event_btnReproducir1ActionPerformed
     
-    private void btnReproducirP1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReproducirP1MousePressed
-        
-    }//GEN-LAST:event_btnReproducirP1MousePressed
-
-    private void btnReproducirP1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReproducirP1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnReproducirP1MouseEntered
-
-    private void btnReproducirP1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnReproducirP1KeyPressed
-       
-    }//GEN-LAST:event_btnReproducirP1KeyPressed
-
-    private void btnReproducirP1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_btnReproducirP1StateChanged
-       
-    }//GEN-LAST:event_btnReproducirP1StateChanged
-
     /**
      * @param args the command line arguments
      */
@@ -1479,11 +1653,12 @@ private Timer t;
     private javax.swing.ButtonGroup Pregunta3;
     private javax.swing.ButtonGroup Pregunta4;
     private javax.swing.ButtonGroup Pregunta5;
+    private javax.swing.ButtonGroup Pregunta6;
+    private javax.swing.ButtonGroup Pregunta7;
     private javax.swing.JButton btnComenzar;
     private javax.swing.JButton btnNivel2;
     private javax.swing.JButton btnRegreso;
     private javax.swing.JButton btnReproducir;
-    private javax.swing.JButton btnReproducir1;
     private javax.swing.JButton btnReproducirExamen;
     private javax.swing.JButton btnReproducirExamen1;
     private javax.swing.JButton btnReproducirF;
@@ -1505,12 +1680,13 @@ private Timer t;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1528,6 +1704,7 @@ private Timer t;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -1538,7 +1715,6 @@ private Timer t;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
@@ -1550,6 +1726,8 @@ private Timer t;
     private javax.swing.JLabel lblCorr4;
     private javax.swing.JLabel lblCorr5;
     private javax.swing.JLabel lblCorr6;
+    private javax.swing.JLabel lblCorr7;
+    private javax.swing.JLabel lblCorr8;
     private javax.swing.JLabel lblInc1;
     private javax.swing.JLabel lblInc10;
     private javax.swing.JLabel lblInc11;
@@ -1560,7 +1738,13 @@ private Timer t;
     private javax.swing.JLabel lblInc16;
     private javax.swing.JLabel lblInc17;
     private javax.swing.JLabel lblInc18;
+    private javax.swing.JLabel lblInc19;
     private javax.swing.JLabel lblInc2;
+    private javax.swing.JLabel lblInc20;
+    private javax.swing.JLabel lblInc21;
+    private javax.swing.JLabel lblInc22;
+    private javax.swing.JLabel lblInc23;
+    private javax.swing.JLabel lblInc24;
     private javax.swing.JLabel lblInc3;
     private javax.swing.JLabel lblInc4;
     private javax.swing.JLabel lblInc5;
@@ -1569,8 +1753,10 @@ private Timer t;
     private javax.swing.JLabel lblInc8;
     private javax.swing.JLabel lblInc9;
     private javax.swing.JLabel lblNota;
+    private javax.swing.JLabel lblTiempo;
     private javax.swing.JLabel lblTiempo1;
     private javax.swing.JLabel lblVidas;
+    private javax.swing.JProgressBar pbTiempo;
     private javax.swing.JPanel pnlLinea;
     private javax.swing.JPanel pnlResolver;
     private javax.swing.JRadioButton rbOpc1;
@@ -1588,7 +1774,15 @@ private Timer t;
     private javax.swing.JRadioButton rbOpc20;
     private javax.swing.JRadioButton rbOpc21;
     private javax.swing.JRadioButton rbOpc22;
+    private javax.swing.JRadioButton rbOpc23;
+    private javax.swing.JRadioButton rbOpc24;
+    private javax.swing.JRadioButton rbOpc25;
+    private javax.swing.JRadioButton rbOpc26;
+    private javax.swing.JRadioButton rbOpc27;
+    private javax.swing.JRadioButton rbOpc28;
+    private javax.swing.JRadioButton rbOpc29;
     private javax.swing.JRadioButton rbOpc3;
+    private javax.swing.JRadioButton rbOpc30;
     private javax.swing.JRadioButton rbOpc4;
     private javax.swing.JRadioButton rbOpc5;
     private javax.swing.JRadioButton rbOpc6;
