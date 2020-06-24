@@ -37,6 +37,7 @@ public class Menu extends javax.swing.JFrame {
         btnCerrar = new javax.swing.JButton();
         BtnPiano = new javax.swing.JButton();
         btnAutores = new javax.swing.JButton();
+        btnInstrucciones = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -95,6 +96,17 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(btnAutores, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 190, 50));
 
+        btnInstrucciones.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
+        btnInstrucciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/help_question_1566.png"))); // NOI18N
+        btnInstrucciones.setText("Instrucciones");
+        btnInstrucciones.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnInstrucciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInstruccionesActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 190, 50));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/gif.gif"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -133,6 +145,13 @@ public class Menu extends javax.swing.JFrame {
     private void lblNiveles_UC1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblNiveles_UC1MouseClicked
         
     }//GEN-LAST:event_lblNiveles_UC1MouseClicked
+
+    private void btnInstruccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInstruccionesActionPerformed
+        frmInstrucciones llamar = new frmInstrucciones();
+        llamar.setVisible(true);
+        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dispose();
+    }//GEN-LAST:event_btnInstruccionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,6 +192,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton BtnPiano;
     private javax.swing.JButton btnAutores;
     private javax.swing.JButton btnCerrar;
+    private javax.swing.JButton btnInstrucciones;
     private javax.swing.JButton btnTeoria;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
