@@ -1705,6 +1705,7 @@ private Timer t;
             System.out.println("Datos incorrectos");
             vidas--;
         }
+        
         //pregunta2
         if (rbOpcC.isSelected()==true) {
             System.out.println("Datos correctos");
