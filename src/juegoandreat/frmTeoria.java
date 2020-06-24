@@ -1789,8 +1789,9 @@ private Timer t;
             lblVidas.setText("Has muerto");
             iconoMuerto.setVisible(true);
         }
-        //nota
-        if (nota==10) {
+        //nota - pasar al siguiente nivel
+        if (nota>=8) {
+            JOptionPane.showMessageDialog(this, "Felicidades, ha obtenido "+notaf+" puede pasar al siguiente nivel");
             btnNivel2.setVisible(true);
         }
         //vidas mayor a 0

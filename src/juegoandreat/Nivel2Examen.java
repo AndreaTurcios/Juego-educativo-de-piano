@@ -524,10 +524,15 @@ public class Nivel2Examen extends javax.swing.JFrame {
            vidas--;
           }
         //vidas
+        String vidafinal= String.valueOf(vidas);
+        lblVidas.setText(vidafinal);
         if (vidas<=0) {
             lblVidas.setText("Has muerto");
             iconoMuerto.setVisible(true);
+            
         }
+        
+        
     }//GEN-LAST:event_btnRevisionActionPerformed
 
     private void btnRegresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresoActionPerformed
