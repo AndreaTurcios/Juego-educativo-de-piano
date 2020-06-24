@@ -42,6 +42,7 @@ public class Nivel2Examen extends javax.swing.JFrame {
     private void initComponents() {
 
         Cancion1 = new javax.swing.ButtonGroup();
+        Cancion2 = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -199,12 +200,15 @@ public class Nivel2Examen extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setText("¿Cuál fue la canción anteriormente reproducida?");
 
-        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder("Canción 1"));
+        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder("Canción 2"));
 
+        Cancion2.add(jRadioButton4);
         jRadioButton4.setText("Turkish March - Mozart");
 
+        Cancion2.add(jRadioButton5);
         jRadioButton5.setText("Arabesque - Burgmuller");
 
+        Cancion2.add(jRadioButton6);
         jRadioButton6.setText("Hey Jude - The Beatles");
 
         lblCorr2.setForeground(new java.awt.Color(0, 153, 0));
@@ -370,12 +374,13 @@ public class Nivel2Examen extends javax.swing.JFrame {
                                 .addComponent(btnReproducirExamen1))
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGap(231, 231, 231)
-                                .addComponent(jLabel6))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(259, 259, 259)
-                                .addComponent(jLabel4)))
+                                .addComponent(jLabel6)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(247, 247, 247)
+                .addComponent(jLabel4)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -567,6 +572,7 @@ public class Nivel2Examen extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup Cancion1;
+    private javax.swing.ButtonGroup Cancion2;
     private javax.swing.JButton btnRegreso;
     private javax.swing.JButton btnReproducirExamen;
     private javax.swing.JButton btnReproducirExamen1;
