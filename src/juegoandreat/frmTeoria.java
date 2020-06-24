@@ -101,6 +101,7 @@ private Timer t;
         jLabel13 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel9 = new javax.swing.JPanel();
@@ -353,6 +354,8 @@ private Timer t;
 
         jLabel16.setText("El texto que se muestra a continuación, puede reproducirse al darle click al botón \"Reproducir\":");
 
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pentagrama2.PNG"))); // NOI18N
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -382,8 +385,11 @@ private Timer t;
                         .addComponent(jLabel11))
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGap(57, 57, 57)
-                        .addComponent(jLabel12)))
-                .addContainerGap(64, Short.MAX_VALUE))
+                        .addComponent(jLabel12))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jLabel21)))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -400,7 +406,9 @@ private Timer t;
                 .addComponent(jLabel16)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnReproducirP3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 209, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(jLabel12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel11)
@@ -1998,6 +2006,7 @@ private Timer t;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;

@@ -273,8 +273,12 @@
                                               <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                                               <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                                           </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                              <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
-                                      <EmptySpace pref="64" max="32767" attributes="0"/>
+                                      <EmptySpace pref="51" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -293,7 +297,9 @@
                                       <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btnReproducirP3" min="-2" pref="37" max="-2" attributes="0"/>
-                                      <EmptySpace pref="209" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace pref="18" max="32767" attributes="0"/>
                                       <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
@@ -365,6 +371,13 @@
                             <Component class="javax.swing.JLabel" name="jLabel16">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="El texto que se muestra a continuaci&#xf3;n, puede reproducirse al darle click al bot&#xf3;n &quot;Reproducir&quot;:"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel21">
+                              <Properties>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Imagenes/pentagrama2.PNG"/>
+                                </Property>
                               </Properties>
                             </Component>
                           </SubComponents>
