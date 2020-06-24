@@ -22,6 +22,7 @@ public class Nivel2Examen extends javax.swing.JFrame {
      */
     public Nivel2Examen() {
         initComponents();
+        this.setLocationRelativeTo(null);
          iconoMuerto.setVisible(false);
          lblInc1.setVisible(false);
          lblInc2.setVisible(false);
@@ -81,6 +82,7 @@ public class Nivel2Examen extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 204));
+        setUndecorated(true);
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 255));
 
@@ -378,7 +380,7 @@ public class Nivel2Examen extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(247, 247, 247)
+                .addGap(259, 259, 259)
                 .addComponent(jLabel4)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
