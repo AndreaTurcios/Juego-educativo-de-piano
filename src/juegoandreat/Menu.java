@@ -57,7 +57,7 @@ public class Menu extends javax.swing.JFrame {
 
         btnTeoria.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         btnTeoria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconfinder-musicmelodysoundaudio17-4105564_113840.png"))); // NOI18N
-        btnTeoria.setText("Teoría");
+        btnTeoria.setText("                 Teoría");
         btnTeoria.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnTeoria.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,7 +76,7 @@ public class Menu extends javax.swing.JFrame {
 
         BtnPiano.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         BtnPiano.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pianoicono.png"))); // NOI18N
-        BtnPiano.setText("Práctica");
+        BtnPiano.setText("              Práctica");
         BtnPiano.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnPiano.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +87,7 @@ public class Menu extends javax.swing.JFrame {
 
         btnAutores.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         btnAutores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/business_man_usersearch_thesearch_theclient_2356.png"))); // NOI18N
-        btnAutores.setText("Autores");
+        btnAutores.setText("              Autores");
         btnAutores.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAutores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,7 +98,7 @@ public class Menu extends javax.swing.JFrame {
 
         btnInstrucciones.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         btnInstrucciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/help_question_1566.png"))); // NOI18N
-        btnInstrucciones.setText("Instrucciones");
+        btnInstrucciones.setText("    Instrucciones");
         btnInstrucciones.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnInstrucciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
