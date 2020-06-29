@@ -38,19 +38,21 @@ public class frmJuegoMain extends javax.swing.JFrame {
         jCheckBox1 = new javax.swing.JCheckBox();
         jbtncancion = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        btnCerrar = new javax.swing.JButton();
 
         jButton11.setText("jButton9");
 
         jButton13.setText("jButton9");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
         btnCSost1.setBackground(new java.awt.Color(102, 102, 102));
+        btnCSost1.setText("DO #");
         btnCSost1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnCSost1MouseClicked(evt);
@@ -266,6 +268,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
         });
 
         btnDSost1.setBackground(new java.awt.Color(102, 102, 102));
+        btnDSost1.setText("RE #");
         btnDSost1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnDSost1MouseClicked(evt);
@@ -281,6 +284,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
         });
 
         btnFSost1.setBackground(new java.awt.Color(102, 102, 102));
+        btnFSost1.setText("FA #");
         btnFSost1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnFSost1MouseClicked(evt);
@@ -296,9 +300,13 @@ public class frmJuegoMain extends javax.swing.JFrame {
         });
 
         btnGSost1.setBackground(new java.awt.Color(102, 102, 102));
+        btnGSost1.setText("SOL #");
         btnGSost1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnGSost1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnGSost1MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnGSost1MouseExited(evt);
@@ -311,6 +319,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
         });
 
         btnASost1.setBackground(new java.awt.Color(102, 102, 102));
+        btnASost1.setText("LA #");
         btnASost1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnASost1MouseClicked(evt);
@@ -345,7 +354,12 @@ public class frmJuegoMain extends javax.swing.JFrame {
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("(Simón dice)");
 
-        jLabel1.setText("jLabel1");
+        btnCerrar.setText("Cerrar");
+        btnCerrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -370,37 +384,36 @@ public class frmJuegoMain extends javax.swing.JFrame {
                 .addComponent(btnC2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(53, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(114, 114, 114)
-                        .addComponent(btnCSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(55, 55, 55)
-                        .addComponent(btnDSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(125, 125, 125)
-                        .addComponent(btnFSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47)
-                        .addComponent(btnGSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(61, 61, 61)
-                        .addComponent(btnASost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jbtncancion, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1)
-                        .addGap(49, 49, 49)
-                        .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(114, 114, 114)
+                .addComponent(btnCSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(btnDSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(125, 125, 125)
+                .addComponent(btnFSost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addComponent(btnGSost1)
+                .addGap(58, 58, 58)
+                .addComponent(btnASost1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jCheckBox1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jbtncancion, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(19, 19, 19))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnCerrar))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -441,7 +454,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
               try {
             //String file = "C:\\Users\\15-CW0001la\\Documents\\NetBeansProjects\\JuegoAndreaT\\src\\juegoandreat\\Notas\\Music_Note\\C1.wav";
             
-            String file = "src/juegoandreat/Notas/Music_Note/Do sostenido.mp3";
+            String file = "src/juegoandreat/Notas/Music_Note/C.wav/";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             System.out.println("nota musica1" + notaMusical.equals("C1"));
@@ -511,13 +524,14 @@ public class frmJuegoMain extends javax.swing.JFrame {
     }//GEN-LAST:event_btnC1MouseClicked
 
     private void btnCSost1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCSost1MouseClicked
-        btnCSost1.setBackground(Color.blue);
+        
     }//GEN-LAST:event_btnCSost1MouseClicked
 
     private void btnCSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCSost1ActionPerformed
         System.out.println("C#1");
+        btnCSost1.setBackground(Color.white);
         try {
-            String file = "src/juegoandreat/Notas/Music_Note/Do-sostenido.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/CSOstenido.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -569,7 +583,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
 
     private void btnDSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDSost1ActionPerformed
         System.out.println("D#1");
-       
+       btnDSost1.setBackground(Color.white);
        try {
             String file = "src/juegoandreat/Notas/Music_Note/Re-sostenido.wav";
             InputStream in = new FileInputStream(file);
@@ -657,6 +671,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
 
     private void btnFSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFSost1ActionPerformed
         System.out.println("F#1");
+        btnFSost1.setBackground(Color.white);
        try {
             String file = "src/juegoandreat/Notas/Music_Note/Fa-sostenido.wav";
             InputStream in = new FileInputStream(file);
@@ -676,6 +691,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
 
     private void btnGSost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGSost1ActionPerformed
         System.out.println("G#1");
+        btnGSost1.setBackground(Color.white);
        try {
             String file = "src/juegoandreat/Notas/Music_Note/Solsostenido.wav";
             InputStream in = new FileInputStream(file);
@@ -719,6 +735,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
 
     private void btnASost1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnASost1ActionPerformed
         System.out.println("A#1");
+        btnASost1.setBackground(Color.white);
        try {
             String file = "src/juegoandreat/Notas/Music_Note/La-sostenido.wav";
             InputStream in = new FileInputStream(file);
@@ -764,7 +781,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
         System.out.println("C1");
         if (jCheckBox1.isSelected ()) {
        try {
-            String file = "src/juegoandreat/Notas/Music_Note/FA.wav";
+            String file = "src/juegoandreat/Notas/Music_Note/C1.wav";
             InputStream in = new FileInputStream(file);
             AudioStream audioCsos1 = new AudioStream(in);
             AudioPlayer.player.start(audioCsos1);
@@ -944,39 +961,39 @@ public class frmJuegoMain extends javax.swing.JFrame {
     }//GEN-LAST:event_btnC2MouseExited
 
     private void btnCSost1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCSost1MouseExited
-        btnCSost1.setBackground(Color.white);
+        
     }//GEN-LAST:event_btnCSost1MouseExited
 
     private void btnDSost1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDSost1MouseClicked
-        btnDSost1.setBackground(Color.blue);
+        
     }//GEN-LAST:event_btnDSost1MouseClicked
 
     private void btnDSost1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDSost1MouseExited
-        btnDSost1.setBackground(Color.white);
+       
     }//GEN-LAST:event_btnDSost1MouseExited
 
     private void btnFSost1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFSost1MouseClicked
-        btnFSost1.setBackground(Color.blue);
+       
     }//GEN-LAST:event_btnFSost1MouseClicked
 
     private void btnFSost1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFSost1MouseExited
-        btnFSost1.setBackground(Color.white);
+        
     }//GEN-LAST:event_btnFSost1MouseExited
 
     private void btnGSost1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGSost1MouseClicked
-        btnGSost1.setBackground(Color.blue);
+        
     }//GEN-LAST:event_btnGSost1MouseClicked
 
     private void btnGSost1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGSost1MouseExited
-        btnGSost1.setBackground(Color.white);
+        
     }//GEN-LAST:event_btnGSost1MouseExited
 
     private void btnASost1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnASost1MouseClicked
-        btnASost1.setBackground(Color.blue);
+       
     }//GEN-LAST:event_btnASost1MouseClicked
 
     private void btnASost1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnASost1MouseExited
-        btnASost1.setBackground(Color.white);
+        
     }//GEN-LAST:event_btnASost1MouseExited
    
     private void jbtncancionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtncancionActionPerformed
@@ -1071,6 +1088,14 @@ public class frmJuegoMain extends javax.swing.JFrame {
             cont_final = 0;
         }*/
     }//GEN-LAST:event_jbtncancionActionPerformed
+
+    private void btnGSost1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGSost1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGSost1MouseEntered
+
+    private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnCerrarActionPerformed
 
     private void simonDiceJuego(){
         //Variable global 
@@ -1175,6 +1200,7 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private javax.swing.JButton btnC1;
     private javax.swing.JButton btnC2;
     private javax.swing.JButton btnCSost1;
+    private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnD1;
     private javax.swing.JButton btnDSost1;
     private javax.swing.JButton btnE1;
@@ -1186,7 +1212,6 @@ public class frmJuegoMain extends javax.swing.JFrame {
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton13;
     private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton jbtncancion;

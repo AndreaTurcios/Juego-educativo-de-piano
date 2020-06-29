@@ -8,6 +8,7 @@ package juegoandreat;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
 
@@ -277,7 +278,7 @@ public class Nivel2Examen extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("(Este nivel no se puede acceder a menos que se pase el nivel 1)");
 
-        jPanel8.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel8.setBackground(new java.awt.Color(0, 102, 102));
 
         jLabel3.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -318,7 +319,7 @@ public class Nivel2Examen extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Ubuntu", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("solo puedes escuchar la canción una vez.");
+        jLabel9.setText("solo puedes escuchar la canción una vez, y solo tienes un intento.");
 
         btnRegreso.setText("Regresar al menú");
         btnRegreso.addActionListener(new java.awt.event.ActionListener() {
@@ -333,13 +334,8 @@ public class Nivel2Examen extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(62, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addGap(321, 321, 321))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addGap(55, 55, 55))))
+                .addComponent(jLabel8)
+                .addGap(55, 55, 55))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
@@ -383,6 +379,10 @@ public class Nivel2Examen extends javax.swing.JFrame {
                 .addGap(259, 259, 259)
                 .addComponent(jLabel4)
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(179, 179, 179)
+                .addComponent(jLabel9)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -502,6 +502,7 @@ public class Nivel2Examen extends javax.swing.JFrame {
 
     private void btnRevisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRevisionActionPerformed
         int vidas = 2;
+        btnRevision.setEnabled(false);
         lblInc1.setVisible(true);
          lblInc2.setVisible(true);
          lblInc3.setVisible(true);
@@ -529,9 +530,11 @@ public class Nivel2Examen extends javax.swing.JFrame {
         if (vidas<=0) {
             lblVidas.setText("Has muerto");
             iconoMuerto.setVisible(true);
-            
+            JOptionPane.showMessageDialog(this, "Mala suerte. Has muerto");
         }
-        
+        if (vidas>=1) {
+            JOptionPane.showMessageDialog(this, "Felicidades, tienes "+vidafinal+" vidas. Has ganado");
+        }
         
     }//GEN-LAST:event_btnRevisionActionPerformed
 

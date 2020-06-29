@@ -64,6 +64,8 @@ private Timer t;
         lblCorr8.setVisible(false);
         lblCorr9.setVisible(false);
         lblCorr10.setVisible(false);
+        lblVidaaa.setVisible(false);
+        lblVidas.setVisible(false);
     }
 
     
@@ -233,7 +235,7 @@ private Timer t;
         btnComenzar = new javax.swing.JButton();
         btnRegreso = new javax.swing.JButton();
         pnlLinea = new javax.swing.JPanel();
-        lblTiempo1 = new javax.swing.JLabel();
+        lblVidaaa = new javax.swing.JLabel();
         iconoMuerto = new javax.swing.JLabel();
         lblVidas = new javax.swing.JLabel();
         btnNivel2 = new javax.swing.JButton();
@@ -1531,9 +1533,9 @@ private Timer t;
         pnlLinea.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel3.add(pnlLinea, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, 90, -1));
 
-        lblTiempo1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblTiempo1.setText("Vidas:");
-        jPanel3.add(lblTiempo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 380, -1, 22));
+        lblVidaaa.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblVidaaa.setText("Vidas:");
+        jPanel3.add(lblVidaaa, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 380, -1, 22));
 
         iconoMuerto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/game_skull_head_skull_dead_die_death_icon_133746.png"))); // NOI18N
         iconoMuerto.setEnabled(false);
@@ -1553,7 +1555,7 @@ private Timer t;
 
         lblTiempo.setText("Tiempo límite: 10 min");
         jPanel3.add(lblTiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, -1, -1));
-        jPanel3.add(pbTiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, -1, -1));
+        jPanel3.add(pbTiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, -1, -1));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -1621,6 +1623,9 @@ private Timer t;
         lblVidas.setVisible(true);
         lblVidas.setEnabled(true);
         
+        lblVidaaa.setVisible(true);
+        lblVidas.setVisible(true);
+        
         ac= new ActionListener() {
             
         @Override
@@ -1662,6 +1667,8 @@ private Timer t;
     private void btnRevisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRevisionActionPerformed
         int vidas = 3;
                 //lblInc
+        t.stop();
+        btnRevision.setEnabled(false);
         lblInc1.setVisible(true);
         lblInc2.setVisible(true);
         lblInc3.setVisible(true);
@@ -1797,7 +1804,9 @@ private Timer t;
             pnlLinea.setVisible(false);
             lblVidas.setText("Has muerto");
             iconoMuerto.setVisible(true);
+            JOptionPane.showMessageDialog(this, "Mala suerte. Has muerto");
         }
+        
         //nota - pasar al siguiente nivel
         if (nota>=8) {
             JOptionPane.showMessageDialog(this, "Felicidades, ha obtenido "+notaf+" puede pasar al siguiente nivel");
@@ -2093,7 +2102,7 @@ private Timer t;
     private javax.swing.JLabel lblInc9;
     private javax.swing.JLabel lblNota;
     private javax.swing.JLabel lblTiempo;
-    private javax.swing.JLabel lblTiempo1;
+    private javax.swing.JLabel lblVidaaa;
     private javax.swing.JLabel lblVidas;
     private javax.swing.JLabel lbldsf;
     private javax.swing.JProgressBar pbTiempo;

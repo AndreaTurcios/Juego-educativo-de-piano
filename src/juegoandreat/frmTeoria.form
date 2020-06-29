@@ -2382,7 +2382,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                 </Container>
-                <Component class="javax.swing.JLabel" name="lblTiempo1">
+                <Component class="javax.swing.JLabel" name="lblVidaaa">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="14" style="0"/>
@@ -2447,7 +2447,7 @@
                 <Component class="javax.swing.JProgressBar" name="pbTiempo">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="70" y="400" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="60" y="400" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
