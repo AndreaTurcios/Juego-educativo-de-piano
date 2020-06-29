@@ -38,6 +38,7 @@ public class Menu extends javax.swing.JFrame {
         BtnPiano = new javax.swing.JButton();
         btnAutores = new javax.swing.JButton();
         btnInstrucciones = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -107,6 +108,16 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(btnInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 190, 50));
 
+        jButton1.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/adobe_pdf_document_14979.png"))); // NOI18N
+        jButton1.setText("Lector PDF");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 443, 170, 50));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/gif.gif"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -153,6 +164,13 @@ public class Menu extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnInstruccionesActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Visual llamar = new Visual();
+        llamar.setVisible(true);
+        llamar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -194,6 +212,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnInstrucciones;
     private javax.swing.JButton btnTeoria;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
