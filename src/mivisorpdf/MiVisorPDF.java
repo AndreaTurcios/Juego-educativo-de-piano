@@ -67,10 +67,7 @@ public class MiVisorPDF {
                 g.dispose();
 
                 baos = new ByteArrayOutputStream();
-                //ImageIO.write(bufferedImage, "jpg", Base64.getEncoder().wrap(baos));
-                //---------------------------------------
-
-                //---------------------------------------
+                
                 ImageIO.write(bufferedImage, "PNG", baos);
                 bi = baos.toByteArray();
 
@@ -93,7 +90,7 @@ public class MiVisorPDF {
     }
 
     public static void main(String[] args) {
-        // TODO code application logic here
+       
     }
 
 }
